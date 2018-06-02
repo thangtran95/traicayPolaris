@@ -1,0 +1,268 @@
+.phantrang{
+	text-align: center;
+	ul{
+		li{
+			a, span{
+				border-radius: 50% !important;
+				margin: 0 4px;
+				color: $green;
+				border: 1px solid;
+			}
+			&.active, &:hover{
+				a, span{
+					background: $green !important;
+					border: 1px solid $green;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+.news-fix{
+	.set-news-left{
+		div{
+			h3{
+				margin-bottom: 30px;
+			}
+		}
+		.spbcn{
+			padding: 10px;
+			.post-by{
+				height: 40px;
+				display: table;
+				margin: 15px 0;
+				img{
+					display: inline-block;
+					float: left;
+					margin-right: 15px;
+				}
+				h5{
+					display: table-cell;
+					vertical-align: middle;
+					height: 100%;
+				}
+			}
+			.tieude-news{
+				a{
+					color: #fff;
+					text-decoration: none;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					height: 60px;
+					h4{
+						font-weight: 600;
+						line-height: 1.4;
+						font-size: 17px;
+
+					}
+				}
+				p{
+					font-size: 16px !important;
+					color: #fff !important;
+					font-weight: 300 !important;
+					text-align: justify !important;
+				}
+			}
+		}
+		.ttnbn{
+			.slide {
+				.carousel-control{
+					&.left{
+						left: 0 !important;
+					}
+					&.right{
+						right: 0 !important;
+					}
+				}
+			}
+		}
+	}
+	.news-right{
+		.set-box-news{
+			margin-bottom: 30px;
+
+			a{
+				text-decoration: none;
+				.picnews{
+					width: 100%;
+				}
+				.postby{
+					height: 40px;
+					display: table;
+					margin: 15px 0;
+					img{
+						display: inline-block;
+						float: left;
+						margin-right: 15px;
+					}
+					h5{
+						display: table-cell;
+						vertical-align: middle;
+						height: 100%;
+						color: #999999;
+						span{
+							color: #000;
+						}
+					}
+				}
+				h2{
+					font-size: 17px;
+					font-weight: 600;
+					color: #000;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					height: 37px;
+					transition: all .5s ease;
+				}
+				p{
+					color: #999999;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 4;
+					text-align: justify;
+				}
+				&:hover{
+					h2{
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+}
+
+.news-detail{
+	.txt-news-detail{
+		.pic-title-news{
+			margin: auto;
+		}
+		.postby{
+			height: 40px;
+			display: table;
+			margin: 15px 0;
+			img{
+				display: inline-block;
+				float: left;
+				margin-right: 15px;
+			}
+			h5{
+				display: table-cell;
+				vertical-align: middle;
+				height: 100%;
+				color: #999999;
+				span{
+					color: #000;
+				}
+			}
+		}
+		h4{
+			font-weight: 600;
+		}
+		img{
+			margin: 20px auto;
+
+		}
+		p{
+			text-align: justify;
+			color: #999999;
+		}
+		border-bottom: 1px solid #cecece;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+	.form-news-detail{
+		ul{
+			padding: 0;
+			li{
+				list-style: none;
+				display: inline-block;
+				margin-right: 15px;
+				margin-bottom: 20px;
+				a{
+					color: #fff;
+					padding: 3px 10px;
+					border-radius: 3px;
+					text-decoration: none;
+					background: #1b95e0;
+					box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+					transition: all .5s ease;
+					&:hover{
+						box-shadow: none;
+					}
+
+					&.share-twitter{
+						background: #1b95e0;
+					}
+					&.share-pinterest{
+						background: #bd081c;
+					}
+					&.share-gg{
+						background: #fff;
+						color: #db4437;
+					}
+					&.share-like{
+						background: #4267b2;
+					}
+				
+				}
+			}
+		}
+		.form-news-detail-1{
+			padding: 20px 0;
+			h4{
+				font-weight: 600;
+				margin-bottom: 20px;
+
+			}
+			.f-n-t-1{
+				padding-left: 0;
+			}
+			.f-n-t-2{
+				padding-right: 0;
+			}
+			form{
+				.form-group{
+					input{
+						background: transparent;
+						height: 45px;
+						border: 1px solid #9bd031;
+						margin-bottom: 20px;
+						border-radius: 10px;
+					}
+					textarea{
+						background: transparent;
+						border: 1px solid #9bd031;
+						margin-bottom: 20px;
+						border-radius: 10px;
+					}
+				}
+				button{
+					height: 45px;
+					border-radius: 10px;
+					background: #9bd031;
+					border: none;
+					color: #fff;
+					text-transform: uppercase;
+					font-size: 17px;
+					-webkit-transition: all .5s ease;
+					transition: all .5s ease;
+					padding: 0 20px;
+					&:hover{
+						background: #fff;
+						color: $green;
+						border: 1px solid;
+					}
+				}
+			}
+			
+		}
+	}
+}

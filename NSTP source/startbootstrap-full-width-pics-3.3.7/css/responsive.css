@@ -1,0 +1,227 @@
+@media only screen and (min-width: 1920px) {
+    
+}
+
+@media only screen and (max-width: 1920px) {
+   
+}
+
+@media only screen and (max-width: 1366px) {
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    fieldset {
+        padding: 0em 1.5em 0em;
+    }
+    .option-3 .container .row .box-best-quality-1 .box-best-quality .bd-box-quality h2 {
+        font-size: 30px;
+    }
+    footer .footer-top .container .row .ft-0 .ft-1 {
+        width: 100%;
+    }
+    footer .footer-main .container .row .ft-form-search .ed-ft-search form .form-group input {
+        width: 73%;
+    }
+    .setting-box-home-product .box-home-product .spnb-1 form fieldset {
+        padding: 0em 7.5em 0em;
+    }
+    footer .ft-bottom .ft-bottom-1 h3 {
+        margin-bottom: 60px !important;
+    }
+    footer .ft-bottom .ft-bottom-1 .ed-next-prev .slide .carousel-control {
+        top: -53px !important;
+    }
+    header .head-top ul {
+        text-align: center;
+    }
+    footer .ft-bottom .ft-bottom-1 .logo-1 {
+        margin-bottom: 60px;
+    }
+    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control.right {
+        right: 2.5em;
+    }
+    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control.left {
+        left: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .option-1 .container .box-banner {
+        width: 60%;
+    }
+  
+    .option-3 .container .row .box-best-quality-1 .box-best-quality {
+        margin: 0 auto 40px;
+    }
+    .option-4 .container .row .home-spkm a .home-spkm-1 {
+        margin-bottom: 30px;
+    }
+    .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 h4 {
+        font-size: 35px;
+    }
+    .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 h3 {
+        font-size: 30px;
+        display: inline-block;
+    }
+    .option-4 .container .row .home-spkm a .home-spkm-1 h5 {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        padding: 17px 3px;
+    }
+    .option-5 .container .slider .ed-customer {
+        width: 100% !important;
+    }
+    footer .footer-top .container .row .ft-0 .ft-1 {
+        width: 42%;
+        margin-bottom: 30px;
+    }
+    footer .footer-main .container .row .ft-form-search .ed-ft-search form {
+        width: 80%;
+        margin: 0 auto 30px;
+    }
+    footer .footer-main .container .row .ft-form-search .ft-social ul {
+        text-align: center;
+    }
+    .setting-box-home-product .box-home-product .spnb-1 form fieldset {
+        padding: 0em 4em 0em;
+    }
+    .option-5 .container .slider .ed-customer .ed-customer-1 {
+        display: unset; 
+        float: unset; 
+        margin-right: 0; 
+        text-align: center;
+    }
+    .slick-slide img {
+        margin: auto;
+    }
+    .register-page .container .row .form-register-right {
+         height: unset; 
+    }
+    .f-n-t-1, .f-n-t-2{
+        padding: 0;
+    }
+    footer .footer-main .container .row .ft-form-search .ed-ft-search form .form-group input {
+        width: 78%;
+    }
+    
+}
+@media (max-width: 767px){
+
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-header a.navbar-brand{
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+
+    }
+    header .head-logo .ed-navbar nav {
+        padding: 0px 0;
+    }
+    header .head-logo .ed-navbar{
+        padding: 0;
+    }
+    header .head-logo .ed-navbar nav{
+        border-radius: 0;
+        
+    }
+    .option-1 .container .box-banner {
+        width: 100%;
+    }
+    .option-2 .ed-tab .nav-tabs li {
+        float: unset;
+        margin-bottom: 20px;
+    }
+    .option-3 .container .row .box-best-quality-1 .box-best-quality .bd-box-quality h2 {
+        font-size: 23px;
+    }
+    .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 h4 {
+        font-size: 22px;
+    }
+    .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 h3 {
+        font-size: 19px;
+    }
+    footer .footer-top .container .row .ft-0 .ft-1 {
+        width: 80%;
+    }
+    footer .footer-main .container .row h2 {
+        font-size: 20px;
+    }
+    footer .footer-main .container .row .ft-form-search .ed-ft-search form .form-group input {
+        width: 65%;
+    }
+    footer .ft-bottom {
+        padding: 30px 0px;
+    }
+    .setting-box-home-product .box-home-product .spnb-1 form fieldset {
+        padding: 0em 7.5em 0em;
+    }
+    header .head-logo .ed-navbar nav .container .navbar-collapse .navbar-nav li {
+        float: none;
+        display: block;
+    }
+    header .head-logo .ed-navbar nav .container .navbar-collapse .navbar-nav li a{
+        font-size: 16px;
+        padding: 10px 17px;
+    }
+    header .head-logo .ed-navbar nav .container .navbar-collapse .navbar-nav li.active a{
+        font-size: 16px;
+        padding: 10px 17px;
+    }
+    header .head-logo .ed-navbar nav .container .navbar-collapse .navbar-nav {
+        margin: 15px 0;
+    }
+    .register-page .container .row .form-register .form-register-1 h5::before {
+        width: 30%;   
+    }
+    .register-page .container .row .form-register .form-register-1 h5::after {
+        width: 30%;   
+    }
+    .contact .container .row .contact-left {
+        padding: 0em;
+    }
+    .spbcn fieldset{
+        padding: 0em 7.5em 0em;
+    }
+    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control .glyphicon.glyphicon-chevron-right {
+        margin-right: -10px;
+    }
+
+    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control .glyphicon {
+        margin-top: -12px;
+    }
+    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control .glyphicon.glyphicon-chevron-left {
+        margin-left: -10px;
+    }
+    .news-1 .container .row .news-right .title-news-2 ul li {
+        margin-bottom: 10px;
+    }
+    .setting-box-home-product fieldset {
+        padding: 0em 7.5em 0em;
+    }
+
+@media only screen and (max-width: 375px) {
+    .spbcn fieldset {
+        padding: 0em 6.5em 0em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+@media only screen and (max-height: 560px) {
+    
+
+}

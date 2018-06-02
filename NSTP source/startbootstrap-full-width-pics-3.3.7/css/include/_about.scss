@@ -1,0 +1,69 @@
+.banner-page-1{
+	background: linear-gradient(141deg, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.53) 75%),url(../images/about/bg-about-1.jpg) no-repeat;
+	background-size: cover;
+	padding: 40px 0;
+	.container{
+		h4{
+			color: $green;
+			a{
+				text-decoration: none;
+				color: #fff;
+				transition: all .5s ease;
+				&:hover{
+					color: $green;
+				}
+			}
+			i{
+				margin: 0 15px;
+			}
+		}
+	}
+}
+
+.about-1{
+	padding: 50px 0;
+	.container{
+		.about-1-1{
+			.about-left{
+				img{
+					width: 100%;
+				}
+			}
+			.about-right{
+				div{
+					h5{
+						margin: 0;
+						text-transform: uppercase;
+						color: #8d8d8d;
+					}
+					h3{
+						color: #333333;
+						font-weight: bold;
+						margin: 15px 0;
+					}
+					p{
+						text-align: justify;
+					}
+				}
+			}
+		}
+		.about-1-2{
+			padding: 60px 0 40px;
+			div{
+				div{
+					text-align: center;
+					img{
+
+					}
+					h4{
+						font-weight: bold;
+						margin: 15px 0;
+					}
+					p{
+						color: #a9a9a9;
+					}
+				}
+			}
+		}
+	}
+}
