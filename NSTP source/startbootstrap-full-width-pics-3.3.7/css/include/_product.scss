@@ -118,27 +118,28 @@
 
 							.range-bar {
 								border: none;
-								background: #000;
+								background: #676767;
 								height: 3px;	
 								width: 96%;
 								margin-left: 8px;
 
 								.ui-slider-range {
-									background:#06b9c0;
+									background:#fff;
 								}
 
 								.ui-slider-handle {
 									border:none;
 									border-radius:25px;
 									background:#fff;
-									border:2px solid #06b9c0;
+									border:2px solid $green;
 									height:17px;
 									width:17px;
 									top: -0.52em;
 									cursor:pointer;
+									outline: none;
 								}
 								.ui-slider-handle + span {
-									background:#06b9c0;
+									background:#fff;
 								}
 							}
 						}
@@ -351,4 +352,287 @@
 		}
 	}
 }
+ 
+.news-detail{
+	.news-detail-right{
+		.news-detail-right-2{
+			.information-product{
+				border-bottom: 1px solid #cecece;
+				padding-bottom: 20px;
+				.ed-star-detail{
+					fieldset{
+						padding: 0;
+					}
+				}
+				h4{
+					font-weight: 600;
+					margin-top: 0;
+				}
+				h5{
+					color: #333333;
+					span{
+						color: $green;
+					}
+				}
+				h3{
+					color: $red;
+					margin: 20px 0;
+					font-weight: bold;
+				}
+				.custom-input-number{
+					.custom-input-number-1{
+						float: left;
+						margin-right: 20px;
+					}
+					.addcart{
+						height: 48px;
+						background: $green;
+						border: none;
+						padding: 0 20px;
+						color: #fff;
+						text-transform: uppercase;
+						border-radius: 10px;
+						transition: all .5s ease;
+						&:hover{
+							background: #fff;
+							color: $green;
+							border: 1px solid;
+						}
+					}
+				}
+				
+			}
+			ul{
+				padding: 0;
+				h3{
+					font-size: 15px;
+					margin: 15px 0;
+					a{
+						color: $green;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.chinhsach-muahang{
+			margin-top: 20px;
+			.nav-tabs{
+				border-bottom: 5px solid #9bd031;
+				margin-bottom: 20px;
+				li{
+					a{
+						background: #c6de95;
+						color: #fff;
+						margin-right: 10px;
+						border-radius: 0;
+						border: none;
+						border-bottom: 2px solid $green;
+						transition: all .5s ease;
+					}
+					&.active, &:hover{
+						a{
+							background: $green;
+							border-bottom: 2px solid $green;
+							
+						}
+					}
+				}
+			}
+			.tab-content{
+				.tab-pane{
+					p{
+						line-height: 1.7;
+					}
+					img{
+						width: unset;
+						margin: 20px auto;
+					}
+				}
+			}
+		}
+		.ed-sanpham-lienqan{
+			background: #f3f3f3;
+			h2{
+				font-size: 20px;
+				text-transform: uppercase;
+				background: $green;
+				color: #fff;
+				padding: 13px 10px;
+				font-weight: 600;
+				margin: 0 0 20px;
+			}
+			.sanpham-lienqan-1{
+				.slide{
+					.carousel-control{
+						top: -65px !important;
+						background-image: unset;
+						background-image: unset;
+						background-image: unset;
+						background-image: unset;
+						filter: unset;
+						background-repeat: unset;
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						padding: 7px;
+						color: #fff;
+						border: 2px solid #fff;
+						&.left{
+							right: 4em;
+							left: unset;
+						}
+						&.right{
+							right: 1em;
 
+						}
+						.glyphicon{
+							margin-top: -13px;
+							font-size: 25px;
+							&.glyphicon-chevron-left{
+								margin-left: -14px;
+							}
+							&.glyphicon-chevron-right{
+								margin-right: -15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.product-general{
+	margin-bottom: 30px;
+	a{
+		text-decoration: none;
+		img{
+			width: 100%;	
+		}
+		h3{
+			text-align: center;
+			font-size: 18px;
+			color: #333333;
+			font-weight: 600;
+			transition: all .5s ease;
+
+		}
+		&:hover{
+			h3{
+				color: $green;
+			}
+		}
+	}
+	form{
+		fieldset{
+
+		}
+	}
+	p{
+		font-size: 20px;
+		color: $red;
+		font-weight: bold;
+		text-align: center;
+		padding-bottom: 20px;
+		span{
+			font-size: 15px;
+			color: #999999;
+			font-weight: normal;
+			text-decoration: line-through;
+		}
+	}
+}
+
+
+.add-succes{
+	.modal-body{
+		button.close{
+			position: absolute;
+			top: -25px;
+			right: -30px;
+			color: #fff;
+			font-size: 3em;
+			text-shadow: none;
+			opacity: .5;
+		}
+		.add-succes-left{
+			border-right: 1px solid $green;
+			.add-succes-1{
+				h3{
+					font-size: 14px;
+					color: $green;
+					margin-top: 0;
+				}
+				img{
+					display: inline-block;
+					float: left;
+					margin-right: 20px;
+				}
+				h4{
+					display: table;
+					font-size: 16px;
+					font-weight: 500;
+				}
+				h5{
+					display: table;
+					font-size: 16px;
+					font-weight: bold;
+				}
+			}
+		}
+		.giohanghientai{
+			h2{
+				font-size: 15px;
+				margin-top: 0;
+				font-weight: 600;
+				span{
+					color: #999999;
+				}
+			}
+			h5{
+				position: relative;
+				padding: 5px 0 10px;
+				&.tamtinh{
+					border-bottom: 1px solid $green;
+				}
+				b{
+					position: absolute;
+					right: 0;
+				}
+				span{
+					font-size: 12px;
+					color: #999999;
+				}
+			}
+			ul{
+				padding: 0;
+				list-style: none;
+				li{
+					display: inline-block;
+					font-size: 13px;
+					&:first-child{
+						a{
+							color: $red;
+							text-decoration: underline;
+						}
+					}
+					&:last-child{
+						a{
+							padding: 8px 10px;
+							background: $green;
+							color: #fff;
+							border-radius: 10px;
+							text-decoration: none;
+							transition: all .5s ease;
+							&:hover{
+								background: #fff;
+								color: $green;
+								border: 1px solid;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

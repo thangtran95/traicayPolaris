@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>404 PAGE</title>
+    <title>Giỏ hàng</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -139,25 +139,82 @@
     <section>
         <article class="banner-page-1">
             <div class="container">
-                <h4><a href="#">Trang chủ </a> <i class="fas fa-long-arrow-alt-right"></i> Lỗi tìm kiếm</h4>
+                <h4><a href="#">Trang chủ </a> <i class="fas fa-long-arrow-alt-right"></i> Cart</h4>
             </div>
         </article>
 
-        <article class="search-error">
+        <article class="setting-cart">
             <div class="container">
                 <div class="row">
-                    <p>"<span>sgjghjghjghj</span>" Xin lỗi kết quả tìm kiếm của bạn không thấy.</p>
-                    <div class="stt-form">
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <input type="email" placeholder="Tìm kiếm..." class="form-control" id="email">
-                            </div>
-                            <button type="submit" class="btn btn-default"><i class="fas fa-search"></i> Tìm kiếm</button>
-                        </form>
+                    <h3 class="title-cart">Giỏ hàng</h3>
+                    <div class="table-cart table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Mô tả</th>
+                                    <th>Đơn giá</th>
+                                    <th>Khối lượng (kg)</th>
+                                    <th>Thành tiền</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/cart/cart-1.jpg"></td>
+                                    <td width="25%"><p>Cherry Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng.</p></td>
+                                    <td><h4>500.000đ</h4></td>
+                                    <td>
+                                        <div class="custom-input-number fix-input-number">
+                                            <div class="custom-input-number-1">
+                                                
+                                                <input type="number" class="cin-input basket-quantity" step="1" value="1" min="1" max="999">
+                                                
+                                                <button type="button" class="cin-increment">
+                                                    <i class="fas fa-angle-double-up"></i>
+                                                </button><br>
+                                                <button type="button" class="cin-decrement">
+                                                    <i class="fas fa-angle-double-down"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                    <td><h4>500.000đ</h4></td>
+                                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+
+                                <tr>
+                                    <td><img src="images/cart/cart-1.jpg"></td>
+                                    <td width="25%"><p>Cherry Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng.</p></td>
+                                    <td><h4>500.000đ</h4></td>
+                                    <td>
+                                        <div class="custom-input-number fix-input-number">
+                                            <div class="custom-input-number-1">
+                                                
+                                                <input type="number" class="cin-input basket-quantity" step="1" value="1" min="1" max="999">
+                                                
+                                                <button type="button" class="cin-increment">
+                                                    <i class="fas fa-angle-double-up"></i>
+                                                </button><br>
+                                                <button type="button" class="cin-decrement">
+                                                    <i class="fas fa-angle-double-down"></i>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                    <td><h4>500.000đ</h4></td>
+                                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
                     </div>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-long-arrow-alt-left"></i> Quay lại trang chủ</a></li>
-                        <li><a href="#"><i class="fas fa-envelope"></i> Liên hệ với chúng tôi</a></li>
+                    <ul class="btn-thanhtoan">
+                        <h5>Tổng đơn hàng: <span>1.100.000đ</span></h5>
+                        <li><a href="#">Tiếp tục mua hàng</a></li>
+                        <li><a href="#">Tiến hành đặt hàng</a></li>
                     </ul>
                 </div>
             </div>
@@ -375,6 +432,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/custom_slick.js"></script>
     <script src="js/custom.js"></script>
+
 
 </body>
 

@@ -18,7 +18,7 @@
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/slick-theme.css" rel="stylesheet">
-    <link href="css/main.scss" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
 
@@ -35,11 +35,11 @@
         </div>
 
         <div class="head-logo ">
-            <ul class="container head-mid-logo hidden-xs">
-                <div class="col-sm-3 ed-logo">
+            <ul class="container head-mid-logo">
+                <div class="col-sm-3 ed-logo hidden-xs">
                     <a href="#"><h2>LOGO</h2></a>
                 </div>
-                <div class="col-sm-6 ed-form-search">
+                <div class="col-sm-6 ed-form-search hidden-xs">
                     <div class="col-xs-6 category">
                         <div class="form-group">
                             <select class="form-control" id="sel1">
@@ -63,7 +63,32 @@
                     <ul>
                         <li><a href="#"><i class="fas fa-user"></i></a></li>
                         <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i><sup>0</sup></a></li>
+                        <li class="click-drp-cart"><a href="javascript:void(0)"><i class="fas fa-shopping-cart"></i><sup>2</sup></a>
+                            <div class="dropdown-cart ">
+                                <div class="dropdown-cart-1">
+                                    <img src="images/cart/drop-1.jpg">
+                                    <h4>Cherry mỹ</h4>
+                                    <h5>550.000đ</h5>
+                                    <h6>Số lượng: 01</h6>
+                                    <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                                <div class="dropdown-cart-1">
+                                    <img src="images/cart/drop-1.jpg">
+                                    <h4>Cherry mỹ</h4>
+                                    <h5>550.000đ</h5>
+                                    <h6>Số lượng: 01</h6>
+                                    <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                                <ul class="tongcong-giohang chinh-btn">
+                                    <li>Tổng cộng:</li>
+                                    <li><a href="#">Giỏ hàng</a></li>
+                                </ul>
+                                <ul class="tien-thanhtoan chinh-btn">
+                                    <li>1.100.000đ</li>
+                                    <li><a href="#">Thanh toán</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>        
             </ul>
@@ -85,7 +110,7 @@
                                 <li class="active">
                                     <a href="#">Trang chủ</a>
                                 </li>
-                                <li>
+                                <li >
                                     <a href="#">Giới thiệu</a>
                                 </li>
                                 <li class="">

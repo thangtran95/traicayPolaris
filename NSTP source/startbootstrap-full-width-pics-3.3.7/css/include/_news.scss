@@ -178,91 +178,92 @@
 		margin-bottom: 20px;
 		padding-bottom: 20px;
 	}
-	.form-news-detail{
-		ul{
-			padding: 0;
-			li{
-				list-style: none;
-				display: inline-block;
-				margin-right: 15px;
-				margin-bottom: 20px;
-				a{
-					color: #fff;
-					padding: 3px 10px;
-					border-radius: 3px;
-					text-decoration: none;
+	
+}
+.form-news-detail{
+	ul{
+		padding: 0;
+		li{
+			list-style: none;
+			display: inline-block;
+			margin-right: 15px;
+			margin-bottom: 20px;
+			a{
+				color: #fff;
+				padding: 3px 10px;
+				border-radius: 3px;
+				text-decoration: none;
+				background: #1b95e0;
+				box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+				transition: all .5s ease;
+				&:hover{
+					box-shadow: none;
+				}
+
+				&.share-twitter{
 					background: #1b95e0;
-					box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
-					transition: all .5s ease;
-					&:hover{
-						box-shadow: none;
-					}
-
-					&.share-twitter{
-						background: #1b95e0;
-					}
-					&.share-pinterest{
-						background: #bd081c;
-					}
-					&.share-gg{
-						background: #fff;
-						color: #db4437;
-					}
-					&.share-like{
-						background: #4267b2;
-					}
+				}
+				&.share-pinterest{
+					background: #bd081c;
+				}
+				&.share-gg{
+					background: #fff;
+					color: #db4437;
+				}
+				&.share-like{
+					background: #4267b2;
+				}
 				
-				}
 			}
 		}
-		.form-news-detail-1{
-			padding: 20px 0;
-			h4{
-				font-weight: 600;
-				margin-bottom: 20px;
+	}
+	.form-news-detail-1{
+		padding: 20px 0;
+		h4{
+			font-weight: 600;
+			margin-bottom: 20px;
 
-			}
-			.f-n-t-1{
-				padding-left: 0;
-			}
-			.f-n-t-2{
-				padding-right: 0;
-			}
-			form{
-				.form-group{
-					input{
-						background: transparent;
-						height: 45px;
-						border: 1px solid #9bd031;
-						margin-bottom: 20px;
-						border-radius: 10px;
-					}
-					textarea{
-						background: transparent;
-						border: 1px solid #9bd031;
-						margin-bottom: 20px;
-						border-radius: 10px;
-					}
-				}
-				button{
-					height: 45px;
-					border-radius: 10px;
-					background: #9bd031;
-					border: none;
-					color: #fff;
-					text-transform: uppercase;
-					font-size: 17px;
-					-webkit-transition: all .5s ease;
-					transition: all .5s ease;
-					padding: 0 20px;
-					&:hover{
-						background: #fff;
-						color: $green;
-						border: 1px solid;
-					}
-				}
-			}
-			
 		}
+		.f-n-t-1{
+			padding-left: 0;
+		}
+		.f-n-t-2{
+			padding-right: 0;
+		}
+		form{
+			.form-group{
+				input{
+					background: transparent;
+					height: 45px;
+					border: 1px solid #9bd031;
+					margin-bottom: 20px;
+					border-radius: 10px;
+				}
+				textarea{
+					background: transparent;
+					border: 1px solid #9bd031;
+					margin-bottom: 20px;
+					border-radius: 10px;
+				}
+			}
+			button{
+				height: 45px;
+				border-radius: 10px;
+				background: #9bd031;
+				border: none;
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 17px;
+				-webkit-transition: all .5s ease;
+				transition: all .5s ease;
+				padding: 0 20px;
+				&:hover{
+					background: #fff;
+					color: $green;
+					border: 1px solid;
+				}
+			}
+		}
+		
 	}
 }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sản phẩm</title>
+    <title>Thông tin thanh toán</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,11 +35,11 @@
         </div>
 
         <div class="head-logo ">
-            <ul class="container head-mid-logo">
-                <div class="col-sm-3 ed-logo hidden-xs">
+            <ul class="container head-mid-logo hidden-xs">
+                <div class="col-sm-3 ed-logo">
                     <a href="#"><h2>LOGO</h2></a>
                 </div>
-                <div class="col-sm-6 ed-form-search hidden-xs">
+                <div class="col-sm-6 ed-form-search">
                     <div class="col-xs-6 category">
                         <div class="form-group">
                             <select class="form-control" id="sel1">
@@ -63,32 +63,7 @@
                     <ul>
                         <li><a href="#"><i class="fas fa-user"></i></a></li>
                         <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                        <li class="click-drp-cart"><a href="javascript:void(0)"><i class="fas fa-shopping-cart"></i><sup>2</sup></a>
-                            <div class="dropdown-cart ">
-                                <div class="dropdown-cart-1">
-                                    <img src="images/cart/drop-1.jpg">
-                                    <h4>Cherry mỹ</h4>
-                                    <h5>550.000đ</h5>
-                                    <h6>Số lượng: 01</h6>
-                                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                                </div>
-                                <div class="dropdown-cart-1">
-                                    <img src="images/cart/drop-1.jpg">
-                                    <h4>Cherry mỹ</h4>
-                                    <h5>550.000đ</h5>
-                                    <h6>Số lượng: 01</h6>
-                                    <a href="#"><i class="fas fa-trash-alt"></i></a>
-                                </div>
-                                <ul class="tongcong-giohang chinh-btn">
-                                    <li>Tổng cộng:</li>
-                                    <li><a href="#">Giỏ hàng</a></li>
-                                </ul>
-                                <ul class="tien-thanhtoan chinh-btn">
-                                    <li>1.100.000đ</li>
-                                    <li><a href="#">Thanh toán</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i><sup>0</sup></a></li>
                     </ul>
                 </div>        
             </ul>
@@ -110,7 +85,7 @@
                                 <li >
                                     <a href="#">Trang chủ</a>
                                 </li>
-                                <li >
+                                <li class="active">
                                     <a href="#">Giới thiệu</a>
                                 </li>
                                 <li class="">
@@ -121,7 +96,7 @@
                                         <li><a href="">Xu hướng thị trường</a></li>
                                     </ul>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="#">Tin tức</a>
                                 </li>
                                 <li>
@@ -139,207 +114,286 @@
     <section>
         <article class="banner-page-1">
             <div class="container">
-                <h4><a href="#">Trang chủ </a> <i class="fas fa-long-arrow-alt-right"></i> Tin tức</h4>
+                <h4><a href="#">Trang chủ </a> <i class="fas fa-long-arrow-alt-right"></i> <a href="#">Giỏ hàng </a> <i class="fas fa-long-arrow-alt-right"></i> Thông tin thanh toán</h4>
             </div>
         </article>
 
-        <article class="news-1 news-fix">
+        <article class="checkout">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-4 news-left">
-                        <div class="news-left-1">
-                            <h3>Danh mục tin tức</h3>
-                            <ul class="main-menu-left">
-                                <li>
-                                    <div class="title-1 ">Thực phẩm an toàn (10) <i class="fas fa-angle-right"></i></div>
-                                    <ul class="submenu-1">
-                                        <li><a href="#">Thực phẩm an toàn</a> </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <div class="title-1">Bí quyết nội trợ (8) <i class="fas fa-angle-right"></i></div>
-                                    <ul class="submenu-1">
+                <div class="row margin0">
+                    <h2 class="tttt">Thông tin thanh toán</h2>
+                    <ul class="ed-checkout">
+                        <li>
+                            <div class="title-1 ">Bước 1: Tùy chọn thanh toán</div>
+                            <ul class="submenu-1">
+                                <div class="row">
+                                    <div class="col-md-6 new-customer">
+                                        <h4>Khách hàng mới</h4>
+                                        <h5>Tùy chọn thanh toán:</h5>
+                                        <div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Tôi muốn mua hàng không cần tạo tài khoản</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Tạo tài khoản</label>
+                                            </div>
+                                        </div>
+                                        <p>Bằng cách tạo một tài khoản, bạn sẽ có thể mua sắm nhanh hơn, được cập nhật về trạng thái của đơn đặt hàng và theo dõi các đơn đặt hàng bạn đã thực hiện trước đây.</p>
+                                    </div>
+                                    <div class="col-md-6 old-customer">
+                                        <h4>Khách hàng cũ</h4>
+                                        <h5>Tôi là một khách hàng cũ</h5>
+                                        <div class="old-customer-1">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" placeholder="Email" class="form-control" id="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd">Mật khẩu:</label>
+                                                    <input type="password" placeholder="Mật khẩu" class="form-control" id="pwd">
+                                                </div>
+                                                <button type="submit" class="btn btn-default">Đăng nhập</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title-1 ">Bước 2: Địa chỉ giao hàng</div>
+                            <ul class="submenu-1">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Tôi muốn sử dụng địa chỉ hiện có</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Tôi muốn sử dụng địa chỉ mới</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="old-customer-1">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="email">Họ và tên</label>
+                                                    <input type="text" placeholder="Nguyễn Văn A" class="form-control" id="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" placeholder="Email" class="form-control" id="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="text">Quận/Huyện</label>
+                                                    <input type="text" placeholder="Tân Bình" class="form-control" id="quan">
+                                                </div>
+                                                <button type="submit" class="btn btn-default hidden-xs">Tiếp tục</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="old-customer-1">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="email">Số điện thoại</label>
+                                                    <input type="text" placeholder="0987654321" class="form-control" id="phone">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Tỉnh/Thành phố</label>
+                                                    <input type="text" placeholder="Tp. Hồ Chí Minh" class="form-control" id="city">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd">Số nhà/Đường/Phường/Xã</label>
+                                                    <input type="text" placeholder="Cộng Hòa" class="form-control" id="sonha">
+                                                </div>
+                                                <button type="submit" class="btn btn-default visible-xs-block">Tiếp tục</button>
+                                            </form>
+                                        </div>
+                                    </di
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="title-1">Bước 3: Hình thức vận chuyển - phương thức thanh toán</div>
+                            <ul class="submenu-1">
+                                <div class="step-3 table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label class="cus-rdo-btn">
+                                                        <input type="radio" class="radio-inline" name="radios" value="">
+                                                        <span class="outside">
+                                                            <span class="inside"></span>
+                                                        </span>Nội bộ vận chuyển
+                                                    </label>
+                                                </td>
+                                                <td>2 - 3 ngày</td>
+                                                <td>30.000đ</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="cus-rdo-btn">
+                                                        <input type="radio" class="radio-inline" name="radios" value="">
+                                                        <span class="outside">
+                                                            <span class="inside"></span>
+                                                        </span>
+                                                        <img src="images/giaohangtietkiem.png">
+                                                    </label>
+                                                </td>
+                                                <td>2 - 3 ngày</td>
+                                                <td>30.000đ</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="cus-rdo-btn">
+                                                        <input type="radio" class="radio-inline" name="radios" value="">
+                                                        <span class="outside">
+                                                            <span class="inside"></span>
+                                                        </span>
+                                                        <img src="images/viettel.png">
+                                                    </label>
+                                                </td>
+                                                <td>2 - 3 ngày</td>
+                                                <td>20.000đ</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="cus-rdo-btn">
+                                                        <input type="radio" class="radio-inline" name="radios" value="">
+                                                        <span class="outside">
+                                                            <span class="inside"></span>
+                                                        </span>
+                                                        <img src="images/247.png">
+                                                    </label>
+                                                </td>
+                                                <td>2 - 3 ngày</td>
+                                                <td>30.000đ</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label class="cus-rdo-btn">
+                                                        <input type="radio" class="radio-inline" name="radios" value="">
+                                                        <span class="outside">
+                                                            <span class="inside"></span>
+                                                        </span>
+                                                        <img src="images/giaohangnhanh.png">
+                                                    </label>    
+                                                </td>
+                                                <td>2 - 3 ngày</td>
+                                                <td>30.000đ</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cod-qrcode">
+                                    <ul>
+                                        <h4>Vui lòng chọn phương thức thanh toán để sử dụng cho đơn đặt hàng này.</h4>
                                         <li>
-                                            <div class="title-1">Bí quyết (10) <i class="fas fa-angle-right"></i></div>
-                                            <ul class="submenu-1">
-                                                <li><a href="#">Nội trợ</a></li>
-                                            </ul>
+                                            <label class="cus-rdo-btn">
+                                                <input type="radio" class="radio-inline" name="radios1" value="">
+                                                <span class="outside">
+                                                    <span class="inside"></span>
+                                                </span>COD - Thanh toán khi nhận hàng
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="cus-rdo-btn">
+                                                <input type="radio" class="radio-inline" name="radios1" value="">
+                                                <span class="outside">
+                                                    <span class="inside"></span>
+                                                </span><img src="images/vnpay.png">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="cus-rdo-btn">
+                                                <input type="radio" class="radio-inline" name="radios1" value="">
+                                                <span class="outside">
+                                                    <span class="inside"></span>
+                                                </span><img src="images/qrcode.png">
+                                            </label>
                                         </li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <div class="title-1">Vào bếp cùng bạn (10) <i class="fas fa-angle-right"></i></div>
-                                    <ul class="submenu-1">
-                                        <li>Vào bếp cùng bạn</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="news-left-3 set-news-left">
-                            <div>
-                                <h3>Tin tức nổi bật</h3>
-                            </div>
-
-                            <div class="spbcn ttnbn">
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <a href="#" class="title-spbcn">
-                                                <img src="images/news/news-noibat.jpg">
-                                            </a>
-                                            <div class="post-by">
-                                                <img src="images/news/avarta.png">
-                                                <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
-                                            </div>
-                                            <div class="tieude-news">
-                                                <a href="#"><h4>Lorem Ipsum is simply dummy text of the printing</h4></a>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                                
-                                            </div>
-                                            
-                                            
-                                        </div>
-
-                                        <div class="item">
-                                             <a href="#" class="title-spbcn">
-                                                <img src="images/news/news-noibat.jpg">
-                                            </a>
-                                            <div class="post-by">
-                                                <img src="images/news/avarta.png">
-                                                <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
-                                            </div>
-                                            <div class="tieude-news">
-                                                <a href="#"><h4>Lorem Ipsum is simply dummy text of the printing</h4></a>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                                
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                             <a href="#" class="title-spbcn">
-                                                <img src="images/news/news-noibat.jpg">
-                                            </a>
-                                            <div class="post-by">
-                                                <img src="images/news/avarta.png">
-                                                <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
-                                            </div>
-                                            <div class="tieude-news">
-                                                <a href="#"><h4>Lorem Ipsum is simply dummy text of the printing</h4></a>
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-9 col-sm-8 news-right">
-                        <div class="title-news-2">
-                            <h4>Tin tức</h4>
-                            <ul>
-                                <li>
-                                    <div class="form-group">
-                                        <select class="form-control" id="sel1">
-                                            <option>Mặc định</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                </li>
+                                <div class="discount">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label for="email">Mã giảm giá:</label>
+                                            <input type="text" class="form-control" id="discount" placeholder="Nhập mã giảm giá nếu có">
+                                             <button type="submit" class="btn btn-default">Áp dụng</button>
+                                        </div>
+                                       
+                                    </form>
+                                </div>
+                                <div class="next-step-btn">
+                                    <a href="#">Tiếp tục</a>
+                                </div>
                             </ul>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 set-box-news">
-                                <a href="#">
-                                    <img class="picnews" src="images/news/news-1.jpg" class="img-responsive">
-                                    <div class="postby">
-                                        <img src="images/news/avarta.png">
-                                        <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
+                        </li>
+                        <li>
+                            <div class="title-1">Bước 4: Xác nhận đơn hàng</div>
+                            <ul class="submenu-1">
+                                <div class="row">
+                                    <div class="col-sm-6 customer-information">
+                                        <ul>
+                                            <li>Tên người nhận: <span>Nguyễn Văn A</span></li>
+                                            <li>Địa chỉ người nhận: <span>20 Cộng Hòa - Phường 10 - Quận Tân Bình - Tp. Hồ Chí Minh</span></li>
+                                            <li>Số điện thoại người nhận: <span>0987654321</span></li>
+                                        </ul>
                                     </div>
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 set-box-news">
-                                <a href="#">
-                                    <img class="picnews" src="images/news/news-1.jpg" class="img-responsive">
-                                    <div class="postby">
-                                        <img src="images/news/avarta.png">
-                                        <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
+                                    <div class="col-sm-6 thanhtoan-toanbo">
+                                        <div class="thanhtoan-toanbo-1 table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><img src="images/cart/drop-1.jpg"></td>
+                                                        <td>Cherry mỹ</td>
+                                                        <td>Số lượng: 01</td>
+                                                        <td>Đơn giá: 550.000đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="images/cart/drop-1.jpg"></td>
+                                                        <td>Cherry mỹ</td>
+                                                        <td>Số lượng: 01</td>
+                                                        <td>Đơn giá: 550.000đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Tổng tiền:</td>
+                                                        <td colspan="2">1.100.000đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Coupon: <span>10%</span></td>
+                                                        <td colspan="2">- 100.000đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Sản phẩm tặng kèm:</td>
+                                                        <td colspan="2"><img src="images/cart/cherry-small.png"> 0.5 kg</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Thành tiền:</td>
+                                                        <td colspan="2">1.000.000đ</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="next-step-btn next-step-btn-1">
+                                            <a href="#">Thanh toán toàn bộ</a>
+                                        </div>
                                     </div>
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 set-box-news">
-                                <a href="#">
-                                    <img class="picnews" src="images/news/news-1.jpg" class="img-responsive">
-                                    <div class="postby">
-                                        <img src="images/news/avarta.png">
-                                        <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
-                                    </div>
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 set-box-news">
-                                <a href="#">
-                                    <img class="picnews" src="images/news/news-1.jpg" class="img-responsive">
-                                    <div class="postby">
-                                        <img src="images/news/avarta.png">
-                                        <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
-                                    </div>
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 set-box-news">
-                                <a href="#">
-                                    <img class="picnews" src="images/news/news-1.jpg" class="img-responsive">
-                                    <div class="postby">
-                                        <img src="images/news/avarta.png">
-                                        <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
-                                    </div>
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 set-box-news">
-                                <a href="#">
-                                    <img class="picnews" src="images/news/news-1.jpg" class="img-responsive">
-                                    <div class="postby">
-                                        <img src="images/news/avarta.png">
-                                        <h5>Viết bởi: <span>Mrs. Nguyễn</span></h5>
-                                    </div>
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row phantrang">
-                            <ul class="pagination">
-                                <li class="disabled"><span>«</span></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#" rel="next">»</a></li>
+                                </div>
                             </ul>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </article>

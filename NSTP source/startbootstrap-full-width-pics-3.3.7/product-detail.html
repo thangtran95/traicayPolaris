@@ -111,7 +111,7 @@
                                 <li >
                                     <a href="#">Trang chủ</a>
                                 </li>
-                                <li >
+                                <li class="">
                                     <a href="#">Giới thiệu</a>
                                 </li>
                                 <li class="active">
@@ -140,14 +140,14 @@
     <section>
         <article class="banner-page-1">
             <div class="container">
-                <h4><a href="#">Trang chủ </a> <i class="fas fa-long-arrow-alt-right"></i> Sản phẩm</h4>
+                <h4><a href="#">Trang chủ </a> <i class="fas fa-long-arrow-alt-right"></i> Trái cây</h4>
             </div>
         </article>
 
-        <article class="news-1">
+        <article class="news-1 news-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-4 news-left">
+                    <div class="col-lg-3 col-sm-4 news-left">
                         <div class="news-left-1">
                             <h3>Danh mục sản phẩm</h3>
                             <ul class="main-menu-left">
@@ -295,364 +295,289 @@
                         </div>
                     </div>
 
-                    <div class="col-md-9 col-sm-8 news-right">
-                        <div class="title-news-2">
-                            <h4>Trái cây</h4>
-                            <ul>
-                                <li class="active"><a href="#"><i class="fas fa-th"></i> Lưới</a></li>
-                                <li><a href="#"><i class="fas fa-list-ul"></i> </a></li>
-                                <li>
-                                    <div class="form-group">
-                                        <select class="form-control" id="sel1">
-                                            <option>Mặc định</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
+                    <div class="col-lg-9 col-sm-8 news-detail-right">
+                        <div class="row">
+                            <div class="col-md-5 news-detail-right-1">
+                                <div class="slide-rooms preview">
+                                    <div class="preview-pic tab-content">
+                                        <div class="tab-pane active" id="pic-1"><img src="images/product/product-1.jpg" /></div>
+                                        <div class="tab-pane" id="pic-2"><img src="images/product/product-2.jpg" /></div>
+                                        <div class="tab-pane" id="pic-3"><img src="images/product/product-3.jpg" /></div>
+                                        <div class="tab-pane" id="pic-4"><img src="images/product/product-4.jpg" /></div>
+                                        
                                     </div>
-                                </li>
-                            </ul>
+                                    <ul class="preview-thumbnail nav nav-tabs">
+                                        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="images/product/product-1.jpg" /></a></li>
+                                        <li><a data-target="#pic-2" data-toggle="tab"><img src="images/product/product-2.jpg" /></a></li>
+                                        <li><a data-target="#pic-3" data-toggle="tab"><img src="images/product/product-3.jpg" /></a></li>
+                                        <li><a data-target="#pic-4" data-toggle="tab"><img src="images/product/product-4.jpg" /></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-7 news-detail-right-2">
+                                <div class="information-product">
+                                    <h4>Cherry</h4>
+                                    <form class="ed-star-detail">
+                                        <fieldset>
+                                            <span class="star-cb-group">
+                                                <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                                <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                                <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                            </span>
+                                        </fieldset>
+                                    </form>
+                                    <h5>Tình trạng: <span>Còn hàng</span></h5>
+                                    <h5>Mã SP: <span>1XZ12345</span></h5>
+                                    <h3>550.000đ</h3>
+                                    <h5>Nguồn gốc: <span>Mỹ</span></h5>
+                                    <h5>Khối lượng: <span>1kg/hộp</span></h5>
+                                    <p>Cherry Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng.</p>
+                                    <div class="custom-input-number">
+                                        <div class="custom-input-number-1">
+                                            <button type="button" class="cin-btn cin-btn-1 cin-btn-md cin-decrement">
+                                                <i class="fas fa-angle-double-left"></i>
+                                            </button>
+                                            <input type="number" class="cin-input basket-quantity" step="1" value="1" min="1" max="999">
+                                            <button type="button" class="cin-btn cin-btn-1 cin-btn-md cin-increment">
+                                                <i class="fas fa-angle-double-right"></i>
+                                            </button>
+                                        </div>
+                                        <button data-toggle="modal" data-target="#myModal" class="addcart">Thêm vào giỏ hàng</button>
+
+                                    </div>
+                                </div>
+                                <div class="form-news-detail">
+                                    <ul>
+                                        <h3>Tag: <a href="#">Cherry</a></h3>   
+                                        <span>Chia sẻ: </span>
+                                        <li><a href="#" class="share-twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                        <li><a href="#" class="share-pinterest"><i class="fab fa-pinterest"></i> Save</a></li>
+                                        <li><a href="#" class="share-gg"><i class="fab fa-google-plus"></i> Google+</a></li>
+                                        <li><a href="#" class="share-like"><i class="fas fa-thumbs-up"></i> Like</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-1.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Dứa vàng</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>75.000đ/KG <span>140.000đ</span></p>
-                                    </div>
-                                    <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div>
-                                    <!-- <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div> -->
+                        <div class="row chinhsach-muahang">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#home">Thông tin sản phẩm</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Chính sách mua hàng</a></li>
+                                <li><a data-toggle="tab" href="#menu2">Đánh giá sản phẩm</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="home" class="tab-pane fade in active">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                    <img src="images/product/detail-1.jpg" class="img-responsive">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release </p>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-2.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Táo rose</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>90.000đ/KG <span>180.000đ</span></p>
-                                    </div>
-                                    <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div>
-                                    <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div>
+                                <div id="menu1" class="tab-pane fade">
+                                    <h3>Menu 1</h3>
+                                    <p>Some content in menu 1.</p>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-3.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Cam thái</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>80.000đ/KG <span>140.000đ</span></p>
-                                    </div>
-                                    <!-- <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div> -->
-                                    <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-1.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Dứa vàng</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>75.000đ/KG <span>140.000đ</span></p>
-                                    </div>
-                                    <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div>
-                                    <!-- <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-2.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Táo rose</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>90.000đ/KG <span>180.000đ</span></p>
-                                    </div>
-                                    <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div>
-                                    <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-3.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Cam thái</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>80.000đ/KG <span>140.000đ</span></p>
-                                    </div>
-                                    <!-- <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div> -->
-                                    <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-1.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Dứa vàng</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>75.000đ/KG <span>140.000đ</span></p>
-                                    </div>
-                                    <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div>
-                                    <!-- <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-2.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Táo rose</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>90.000đ/KG <span>180.000đ</span></p>
-                                    </div>
-                                    <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div>
-                                    <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 setting-box-home-product">
-                                <div class="box-home-product">
-                                    <div class="show-buy">
-                                        <img src="images/product-3.jpg" class="img-responsive">
-                                        <div class="icon-buy">
-                                            <div>
-                                                <a href="#"><i class="fas fa-search"></i></a>
-                                                <a href="#"><i class="fas fa-heart"></i></a>
-                                            </div>
-                                            <a class="btn-add-cart-1" href="#"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <div class="txt-home-product">
-                                        <a href="#"><h4>Cam thái</h4></a>
-                                        <form>
-                                            <fieldset>
-                                                <span class="star-cb-group">
-                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                </span>
-                                            </fieldset>
-                                        </form>
-                                        <p>80.000đ/KG <span>140.000đ</span></p>
-                                    </div>
-                                    <!-- <div class="sale-off">
-                                        <h4>-50%</h4>
-                                    </div> -->
-                                    <div class="product-new">
-                                        <h4>Mới</h4>
-                                    </div>
+                                <div id="menu2" class="tab-pane fade">
+                                    <h3>Menu 2</h3>
+                                    <p>Some content in menu 2.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row phantrang">
-                            <ul class="pagination">
-                                <li class="disabled"><span>«</span></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#" rel="next">»</a></li>
-                            </ul>
+
+                        <div class="row ed-sanpham-lienqan">
+                            <h2>Sản phẩm liên quan</h2>
+                            <div class="sanpham-lienqan-1">
+                                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="col-md-4">
+                                                <div class="product-general">
+                                                    <a href="#" class="title-spbcn">
+                                                        <img src="images/product/product-1.jpg">
+                                                        <h3>Dứa vàng</h3>
+                                                    </a>
+                                                    <form>
+                                                        <fieldset>
+                                                            <span class="star-cb-group">
+                                                                <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                                                <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                                                <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                                            </span>
+                                                        </fieldset>
+                                                    </form>
+                                                    <p>75.000đ/KG <span>140.000đ</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="product-general">
+                                                    <a href="#" class="title-spbcn">
+                                                        <img src="images/product/product-2.jpg">
+                                                        <h3>Dứa vàng</h3>
+                                                    </a>
+                                                    <form>
+                                                        <fieldset>
+                                                            <span class="star-cb-group">
+                                                                <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                                                <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                                                <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                                            </span>
+                                                        </fieldset>
+                                                    </form>
+                                                    <p>75.000đ/KG <span>140.000đ</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="product-general">
+                                                    <a href="#" class="title-spbcn">
+                                                        <img src="images/product/product-3.jpg">
+                                                        <h3>Dứa vàng</h3>
+                                                    </a>
+                                                    <form>
+                                                        <fieldset>
+                                                            <span class="star-cb-group">
+                                                                <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                                                <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                                                <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                                            </span>
+                                                        </fieldset>
+                                                    </form>
+                                                    <p>75.000đ/KG <span>140.000đ</span></p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="col-md-4">
+                                                <div class="product-general">
+                                                    <a href="#" class="title-spbcn">
+                                                        <img src="images/product/product-1.jpg">
+                                                        <h3>Dứa vàng</h3>
+                                                    </a>
+                                                    <form>
+                                                        <fieldset>
+                                                            <span class="star-cb-group">
+                                                                <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                                                <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                                                <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                                            </span>
+                                                        </fieldset>
+                                                    </form>
+                                                    <p>75.000đ/KG <span>140.000đ</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="product-general">
+                                                    <a href="#" class="title-spbcn">
+                                                        <img src="images/product/product-2.jpg">
+                                                        <h3>Dứa vàng</h3>
+                                                    </a>
+                                                    <form>
+                                                        <fieldset>
+                                                            <span class="star-cb-group">
+                                                                <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                                                <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                                                <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                                            </span>
+                                                        </fieldset>
+                                                    </form>
+                                                    <p>75.000đ/KG <span>140.000đ</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="product-general">
+                                                    <a href="#" class="title-spbcn">
+                                                        <img src="images/product/product-3.jpg">
+                                                        <h3>Dứa vàng</h3>
+                                                    </a>
+                                                    <form>
+                                                        <fieldset>
+                                                            <span class="star-cb-group">
+                                                                <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
+                                                                <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
+                                                                <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
+                                                                <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
+                                                                <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
+                                                                <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
+                                                            </span>
+                                                        </fieldset>
+                                                    </form>
+                                                    <p>75.000đ/KG <span>140.000đ</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content add-succes">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="row">
+                            <div class="col-sm-6 add-succes-left">
+                                <div class="add-succes-1">
+                                    <h3><i class="fas fa-check"></i> Sản phẩm đã được thêm vào giỏ hàng</h3>
+                                    <img src="images/cart/cart-1.jpg">
+                                    <h4>Cherry mỹ</h4>
+                                    <h5>550.000đ</h5>
+                                    <div class="clear-fix"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="giohanghientai">
+                                    <h2>Giỏ hàng của tôi <span>(2 sản phẩm)</span></h2>
+                                    <h5 class="tamtinh">Tạm tính: <b>1.100.000đ</b></h5>
+                                    <h5>Tổng tiền: <span>(Số tiền thanh toán)</span> <b>1.100.000đ</b></h5>
+                                    <ul>
+                                        <li><a href="#">Tiếp tục mua hàng</a></li>
+                                        <li><a href="#">Tiến hành đặt hàng</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->

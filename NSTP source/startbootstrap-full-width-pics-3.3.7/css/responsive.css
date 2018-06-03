@@ -44,6 +44,9 @@
     .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control.left {
         left: 2.5em;
     }
+    .checkout .ed-checkout .submenu-1 .discount form .form-group {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -112,6 +115,9 @@
     }
     footer .footer-main .container .row .ft-form-search .ed-ft-search form .form-group input {
         width: 78%;
+    }
+    .news-detail .news-detail-right .chinhsach-muahang .nav-tabs li a {
+        margin-right: 3px;
     }
     
 }
@@ -210,10 +216,59 @@
     .setting-box-home-product fieldset {
         padding: 0em 7.5em 0em;
     }
+    .chinhsach-muahang .nav-tabs li{
+        float: unset;
+    }
+    .chinhsach-muahang .nav-tabs li a{
+        margin-right: 0 !important;
+    }
+    .setting-cart .btn-thanhtoan{
+        text-align: center;
+    }
+    .setting-cart .btn-thanhtoan li{
+        margin: 20px 0;
+    }
+    header .head-logo .head-mid-logo {
+        padding: 5px 0;
+    }
+    .add-succes .modal-body .add-succes-left .add-succes-1 img {
+         float: unset; 
+    }
+    .add-succes-left .add-succes-1{
+        text-align: center;
+    }
+    .add-succes-left .add-succes-1 h4,
+    .add-succes-left .add-succes-1 h5{
+        display: block !important;
+    }
+    .giohanghientai{
+        margin: 20px 0;
+    }
+    .checkout .ed-checkout .submenu-1 .discount form .form-group {
+        width: 100%;
+    }
+    .checkout .ed-checkout .submenu-1 .discount form .form-group button {
+        bottom: 0;
+        top: unset;
+    }
+    .chinhsach-muahang .tab-content{
+        padding: 15px;
+    }
+}
 
 @media only screen and (max-width: 375px) {
     .spbcn fieldset {
         padding: 0em 6.5em 0em;
+    }
+    .setting-box-home-product .box-home-product .spnb-1 form fieldset {
+        padding: 0em 6.5em 0em;
+    }
+    .setting-box-home-product fieldset {
+        padding: 0em 6.5em 0em;
+    }
+    footer .footer-main .container .row .ft-form-search .ed-ft-search form button {
+        font-size: 16px;
+        padding: 10px 15px;
     }
 }
 

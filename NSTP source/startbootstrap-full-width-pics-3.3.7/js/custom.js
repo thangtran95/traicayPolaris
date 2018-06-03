@@ -40,3 +40,43 @@ $(function() {
 	$( "#amount" ).val( "Từ: " + $( "#slider-range" ).slider( "values", 0 ) +
 	  " - " + $( "#slider-range" ).slider( "values", 1 ) );
 });
+
+
+
+/*
+* todo =>
+* Refacctor with function
+*   
+*/
+$(document).on('click', '.custom-input-number .cin-increment', function (e) {
+    var $input = $(this).siblings('.cin-input'),
+        val = parseInt($input.val()),
+        max = parseInt($input.attr('max')),
+        step = parseInt($input.attr('step'));
+
+    var temp = val + step;
+    $input.val(temp <= max ? temp : max);
+    console.log(temp);
+});
+$(document).on('click', '.custom-input-number .cin-decrement', function (e) {
+    var $input = $(this).siblings('.cin-input'),
+        val = parseInt($input.val()),
+        min = parseInt($input.attr('min')),
+        step = parseInt($input.attr('step'));
+
+    var temp = val - step;
+    $input.val(temp >= min ? temp : min);
+
+    console.log(temp);
+});
+
+// $(document).ready(function(){
+// 	$('.click-drp-cart').click(function(){
+// 		$('.dropdown-cart').toggleClass('.dropdown-cart-show');
+// 	})
+// });
+
+$(document).on('click', '.click-drp-cart', function (e) {
+	$('.dropdown-cart').toggleClass('dropdown-cart-show');
+
+});
