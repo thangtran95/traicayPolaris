@@ -12,12 +12,13 @@
     <title>Home</title>
 
     <!-- Bootstrap Core CSS -->
+    <link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link href="css/full-width-pics.css" rel="stylesheet">
-    <link href="css/slick.css" rel="stylesheet">
-    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/library.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
@@ -26,7 +27,14 @@
 
 <body>
     <header>
-        <div class="head-top hidden-xs">
+        <div class=" text-right ed-toggle-right">
+             <button type="button" id="btn-navbar-toggle" class="navbar-toggle">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+        </div>
+        <div class="head-top visible-lg-block ">
             <ul class="container">
                 <li>Chào mừng đến với Nông sản - Thực phẩm!</li>
                 <li>Hotline: 0123456789</li>
@@ -96,36 +104,28 @@
             <div class="container ed-navbar">
                 <nav class="navbar navbar-inverse " id="getFixed" role="navigation">
                     <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand visible-xs-block" href="#" >LOGO</a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="active">
-                                    <a href="#">Trang chủ</a>
+                                    <a href="index.html">Trang chủ</a>
                                 </li>
                                 <li >
-                                    <a href="#">Giới thiệu</a>
+                                    <a href="about.html">Giới thiệu</a>
                                 </li>
-                                <li class="">
-                                    <a href="" type="button" data-toggle="dropdown">Sản phẩm<span class="caret"></span></a>
-                                    <ul class="dropdown-menu ed-dropmn">
-                                        <li><a href="">Digital Marketing</a></li>
-                                        <li><a href="">Case study chuyên ngành</a></li>
-                                        <li><a href="">Xu hướng thị trường</a></li>
+                                <li >
+                                    <a href="#" class="has-submenu" >Sản phẩm <span class="caret visible-lg-inline-block"></span><span class="caret-down hidden-lg"><i class="fas fa-chevron-right"></i></span></a>
+                                    <ul class="ed-dropmn">
+                                        <li><a href="product.html">Digital Marketing</a></li>
+                                        <li><a href="product.html">Case study chuyên ngành</a></li>
+                                        <li><a href="product.html">Xu hướng thị trường</a></li>
                                     </ul>
                                 </li>
+
                                 <li>
-                                    <a href="#">Tin tức</a>
+                                    <a href="news.html">Tin tức</a>
                                 </li>
                                 <li>
-                                    <a href="#">Liên hệ</a>
+                                    <a href="contact.html">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>
@@ -137,9 +137,9 @@
     
     <!-- Main -->
     <section>
-        <article class="option-1">
+        <article class="option-1 ">
             <div class="container">
-                <div class="box-banner">
+                <div class="box-banner wow animated zoomIn">
                     <div class="box-banner-1">
                         <div class="box-banner-2">
                             <h1>100%</h1>
@@ -170,7 +170,7 @@
 
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
-                            <div class="row">
+                            <div class="row wow animated slideInUp">
                                 <div class="col-md-3 col-sm-6 setting-box-home-product">
                                     <div class="box-home-product">
                                         <div class="show-buy">
@@ -481,7 +481,7 @@
         <article class="option-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 box-best-quality-1">
+                    <div class="col-md-6 box-best-quality-1 wow animated slideInLeft">
                         <div class="box-best-quality">
                             <div class="bd-box-quality">
                                 <h2>Chất lượng<br> sản phẩm</h2>
@@ -490,7 +490,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 box-best-quality-1">
+                    <div class="col-md-6 box-best-quality-1 wow animated slideInRight">
                         <div class="box-best-quality best-quality-1">
                             <div class="bd-box-quality">
                                 <h2>Hoa quả tươi</h2>
@@ -511,7 +511,7 @@
                         <p></p>
                     </div>
 
-                    <div class="col-md-4 home-spkm">
+                    <div class="col-md-4 home-spkm wow animated zoomIn">
                         <a href="#">
                             <div class="home-spkm-1">
                                 <img src="images/km-1.jpg" class="img-responsive">
@@ -523,7 +523,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 home-spkm">
+                    <div class="col-md-4 home-spkm wow animated zoomIn">
                         <a href="#">
                             <div class="home-spkm-1">
                                 <img src="images/km-2.jpg" class="img-responsive">
@@ -535,7 +535,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 home-spkm">
+                    <div class="col-md-4 home-spkm wow animated zoomIn">
                         <a href="#">
                             <div class="home-spkm-1">
                                 <img src="images/km-3.jpg" class="img-responsive">
@@ -553,43 +553,77 @@
 
         <article class="option-5">
             <div class="container">
-                <div class="row">
+                <div class="row wow animated slideInUp">
                     <div class="title-home-page">
                         <h2>Ý kiến khách hàng</h2>
                         <p></p>
                     </div>
-                    <div class="regular col-xs-12 slider">
-                        <div class="ed-customer">
-                            <div class="ed-customer-1">
-                                <img src="images/user-1.png">
-                                <h4>Mrs. Nguyễn</h4>
-                                <h5>CEO Company</h5>
-                            </div>
-                            <div class="ed-customer-2">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
-                            </div>
-                        </div>
 
-                        <div class="ed-customer">
-                            <div class="ed-customer-1">
-                                <img src="images/user-2.png">
-                                <h4>Mrs. Nguyễn</h4>
-                                <h5>CEO Company</h5>
-                            </div>
-                            <div class="ed-customer-2">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
-                            </div>
-                        </div>
+                    <div class="ykien-khachhang">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                            </ol>
 
-                        <div class="ed-customer">
-                            <div class="ed-customer-1">
-                                <img src="images/user-1.png">
-                                <h4>Mrs. Nguyễn</h4>
-                                <h5>CEO Company</h5>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="col-sm-6 slider">
+                                        <div class="ed-customer">
+                                            <div class="ed-customer-1">
+                                                <img src="images/user-1.png">
+                                                <h4>Mrs. Nguyễn</h4>
+                                                <h5>CEO Company</h5>
+                                            </div>
+                                            <div class="ed-customer-2">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 slider">
+                                        <div class="ed-customer">
+                                            <div class="ed-customer-1">
+                                                <img src="images/user-2.png">
+                                                <h4>Mrs. Nguyễn</h4>
+                                                <h5>CEO Company</h5>
+                                            </div>
+                                            <div class="ed-customer-2">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-sm-6 slider">
+                                        <div class="ed-customer">
+                                            <div class="ed-customer-1">
+                                                <img src="images/user-1.png">
+                                                <h4>Mrs. Nguyễn</h4>
+                                                <h5>CEO Company</h5>
+                                            </div>
+                                            <div class="ed-customer-2">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 slider">
+                                        <div class="ed-customer">
+                                            <div class="ed-customer-1">
+                                                <img src="images/user-2.png">
+                                                <h4>Mrs. Nguyễn</h4>
+                                                <h5>CEO Company</h5>
+                                            </div>
+                                            <div class="ed-customer-2">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                          
                             </div>
-                            <div class="ed-customer-2">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -603,7 +637,7 @@
                         <h2>Tin tức</h2>
                         <p></p>
                     </div>
-                    <div class="col-md-4 ed-news">
+                    <div class="col-md-4 ed-news wow animated zoomIn" data-wow-delay="0s">
                         <a href="#" class="ed-news-1">
                             <div class="ed-news-1-2">
                                 <img src="images/news-1.jpg" class="img-responsive" />  
@@ -621,7 +655,7 @@
                             
                         </a>
                     </div>
-                    <div class="col-md-4 ed-news">
+                    <div class="col-md-4 ed-news wow animated zoomIn" data-wow-delay="0.5s">
                         <a href="#" class="ed-news-1">
                             <div class="ed-news-1-2">
                                 <img src="images/news-2.jpg" class="img-responsive" />  
@@ -639,7 +673,7 @@
                             
                         </a>
                     </div>
-                    <div class="col-md-4 ed-news">
+                    <div class="col-md-4 ed-news wow animated zoomIn" data-wow-delay="1s">
                         <a href="#" class="ed-news-1">
                             <div class="ed-news-1-2">
                                 <img src="images/news-2.jpg" class="img-responsive" />  
@@ -667,7 +701,7 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 ft-0">
+                    <div class="col-md-4 ft-0 wow animated flip" data-wow-delay="0s">
                         <div class="ft-1">
                             <i class="fas fa-phone"></i>
                             <div class="ft-2">
@@ -676,7 +710,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ft-0">
+                    <div class="col-md-4 ft-0 wow animated flip" data-wow-delay="0.5s">
                         <div class="ft-1">
                             <i class="fas fa-envelope"></i>
                             <div class="ft-2">
@@ -684,7 +718,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ft-0">
+                    <div class="col-md-4 ft-0 wow animated flip" data-wow-delay="1s">
                         <div class="ft-1">
                             <i class="fas fa-clock"></i>
                             <div class="ft-2">
@@ -701,7 +735,7 @@
                 <div class="row">
                     <h2>Đăng ký để nhận thông tin mới nhất</h2>
                     <div class="row ft-form-search">
-                        <div class="col-md-6 ed-ft-search">
+                        <div class="col-md-6 ed-ft-search wow animated slideInLeft">
                             <form class="form-inline" action="/action_page.php">
                                 <div class="form-group">
                                     <input type="email" placeholder="Nhập email..." class="form-control" id="email">
@@ -709,7 +743,7 @@
                                 <button type="submit" class="btn btn-default">Gửi ngay</button>
                             </form>
                         </div>
-                        <div class="col-md-6 ft-social">
+                        <div class="col-md-6 ft-social wow animated slideInRight">
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
@@ -720,7 +754,7 @@
                         </div>
                     </div>
 
-                    <div class="row ft-bottom">
+                    <div class="row ft-bottom  wow animated slideInUp">
                         <div class="col-sm-4 ft-bottom-1">
                             <h3 class="logo-1">LOGO</h3>
                             <ul>
@@ -867,12 +901,14 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <script src="js/wow.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/custom_slick.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

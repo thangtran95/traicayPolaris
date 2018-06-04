@@ -119,7 +119,17 @@
     .news-detail .news-detail-right .chinhsach-muahang .nav-tabs li a {
         margin-right: 3px;
     }
-    
+    .option-5 .container .row .ykien-khachhang .slider .ed-customer .ed-customer-1 {
+        display: block;
+        float: unset; 
+        margin: auto;
+    }
+    .txt-home-product form fieldset{
+        padding: 0em 6.5em 0em;
+    }
+    .ed-navbar .navbar .navbar-collapse .navbar-nav li .ed-dropmn{
+        position: static;
+    }
 }
 @media (max-width: 767px){
 
@@ -254,6 +264,10 @@
     .chinhsach-muahang .tab-content{
         padding: 15px;
     }
+    .txt-home-product form fieldset{
+        padding: 0em 7.5em 0em;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -269,6 +283,9 @@
     footer .footer-main .container .row .ft-form-search .ed-ft-search form button {
         font-size: 16px;
         padding: 10px 15px;
+    }
+    .txt-home-product form fieldset{
+        padding: 0em 6.5em 0em;
     }
 }
 
