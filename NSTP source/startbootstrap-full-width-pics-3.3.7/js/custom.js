@@ -1,37 +1,58 @@
 jQuery(function($) {
-  // function fixDiv() {
-  //   var $cache = $('#getFixed');
-  //   if ($(window).scrollTop() > 100)
-  //     $cache.css({
-  //       'position': 'fixed',
-  //       'top': '0px',
-  //       'z-index' : '9999',
-  //       'left': '0',
-  //       'right': '0',
-  //       'border-radius': '0'
+	function fixDiv() {
+		if($(window).width() > 1025){
+			var $cache = $('#getFixed');
+			var $addget = $('#fixedmobile');
+			if ($(window).scrollTop() > 100)
+			{
+				// $('#fixed-mobile').removeClass('fix-mobile-ipad');
+
+				$cache.addClass('getFixed-1');
+
+			}
+			else{
+				// $('#fixedmobile').addClass('fix-mobile-ipad');
+				
+				$cache.removeClass('getFixed-1');
+			}
+		}
+	}
 
 
-  //     });
-  //   else
-  //     $cache.css({
-  //       'position': 'relative',
-  //       'top': 'auto',
-  //       'z-index' : '99999',
-  //       'border-top-left-radius': '10px',
-  //       'border-top-right-radius': '10px',
-
-
-  //     });
-  // }
-  // $(window).scroll(fixDiv);
-  // fixDiv();
+	$(window).scroll(fixDiv);
+	fixDiv();
+	$(window).resize( function(){
+		fixDiv();
+	});
 });
+
+
 
 $(document).ready(function(){
 	$('.title-1').click(function(){
 		$(this).siblings('ul').slideToggle(300);
 		$(this).find('.fa-angle-right').toggleClass('rote90');
 	})
+
+	$('#click-profile').on('click', function(){
+		$('.ed-drop-menu').toggleClass('open');
+	});
+
+	$('body, html').on('click', function(event){
+		var target = $(event.target);
+		if( !target.is('#click-profile, #click-profile *')){
+			$('.ed-drop-menu').removeClass('open');
+			open = false;
+		}
+	});
+	$('body, html').on('click', function(event){
+		var target = $(event.target);
+		if( !target.is('.click-drp-cart #kick-cart, .click-drp-cart #kick-cart *,.click-drp-cart .dropdown-cart, .click-drp-cart .dropdown-cart *')){
+			$('.dropdown-cart').removeClass('dropdown-cart-show');
+			open = false;
+		}
+	});
+
 });
 //-----JS for Price Range slider-----
 
@@ -47,8 +68,39 @@ $(function() {
 	});
 	$( "#amount" ).val( "Từ: " + $( "#slider-range" ).slider( "values", 0 ) +
 	  " - " + $( "#slider-range" ).slider( "values", 1 ) );
+
+	$( "#slider-range-1" ).slider({
+	  range: true,
+	  min: 0,
+	  max: 3000000,
+	  values: [ 0, 2000000 ],
+	  slide: function( event, ui ) {
+		$( "#amount1" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+	  }
+	});
+	$( "#amount1" ).val( "Từ: " + $( "#slider-range-1" ).slider( "values", 0 ) +
+	  " - " + $( "#slider-range-1" ).slider( "values", 1 ) );
 });
 
+
+$(function(){
+	$('#getFixed .has-submenu .icon-first-submenu').on('click' , function(event){
+		event.preventDefault();
+		var parent = $(this).parents('.has-submenu');
+		$('#getFixed .has-submenu').not(parent).removeClass('open').find('.submenu-1').slideUp()
+		$('#getFixed .has-submenu').not(parent).find('.has-second-submenu').removeClass('open');
+		$('#getFixed .has-submenu').not(parent).find('.second-submenu').slideUp();
+		parent.toggleClass('open').find('.submenu-1').slideToggle();
+		$(this).toggleClass('rotate0')
+	});
+	$('#getFixed .has-second-submenu .icon-second-submenu').on('click' , function(event){
+		event.preventDefault();
+		var parent = $(this).parents('.has-second-submenu');
+		$('#getFixed .has-second-submenu').not(parent).removeClass('open').find('.submenu-2').slideUp();
+		parent.toggleClass('open').find('.submenu-2').slideToggle();
+		$(this).toggleClass('rotate90');
+	});
+})
 
 
 /*
@@ -84,10 +136,12 @@ $(document).on('click', '.custom-input-number .cin-decrement', function (e) {
 // 	})
 // });
 
-$(document).on('click', '.click-drp-cart', function (e) {
-	$('.dropdown-cart').toggleClass('dropdown-cart-show');
+$(document).on('click', '.click-drp-cart #kick-cart', function (e) {
+	$('.dropdown-cart ').toggleClass('dropdown-cart-show');
 
 });
+
+
 
 $(function(){
 	var show = false;
@@ -135,3 +189,37 @@ $(function(){
 		}
 	})
 })
+
+$(function(){
+	$('#btn-search-mobile .fa-search').on('click', function(){
+		$('.search-mobile').toggleClass('search-mobile-open');
+	})
+})
+
+
+
+$(function(){
+	$('.not-account').on('click', function(){
+		$('.show-regis').slideUp();
+	})
+});
+$(function(){
+	$('.create-account').on('click', function(){
+		$('.show-regis').slideDown();
+	})
+});
+
+
+// ===== Scroll to Top ====
+$(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {    // If page is scrolled more than 50px
+            $('#top').fadeIn("fast");       // Fade in the arrow
+        } else {
+            $('#top').fadeOut("fast");      // Else fade out the arrow
+        }
+    });
+    $('#top').click(function() {            // When arrow is clicked
+    	$('body,html').animate({
+            scrollTop : 0                   // Scroll to top of body
+        }, 500);
+    });

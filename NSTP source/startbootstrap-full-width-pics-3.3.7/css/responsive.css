@@ -11,9 +11,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    fieldset {
-        padding: 0em 1.5em 0em;
-    }
     .option-3 .container .row .box-best-quality-1 .box-best-quality .bd-box-quality h2 {
         font-size: 30px;
     }
@@ -26,27 +23,32 @@
     .setting-box-home-product .box-home-product .spnb-1 form fieldset {
         padding: 0em 7.5em 0em;
     }
-    footer .ft-bottom .ft-bottom-1 h3 {
-        margin-bottom: 60px !important;
-    }
-    footer .ft-bottom .ft-bottom-1 .ed-next-prev .slide .carousel-control {
-        top: -53px !important;
-    }
     header .head-top ul {
         text-align: center;
     }
     footer .ft-bottom .ft-bottom-1 .logo-1 {
         margin-bottom: 60px;
     }
-    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control.right {
-        right: 2.5em;
-    }
-    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control.left {
-        left: 2.5em;
-    }
     .checkout .ed-checkout .submenu-1 .discount form .form-group {
         width: 60%;
     }
+    .search-error .container .row .stt-form form .form-group input {
+        width: 75%;
+    }
+    header .head-logo .head-mid-logo{
+        padding: 10px 0;
+    }
+    header .head-logo {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+    .banner-page-1 {
+        padding: 100px 0 40px;
+    }
+
+
 }
 
 @media only screen and (max-width: 1023px) {
@@ -58,6 +60,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .register-page .container .row{
+        display: unset;
+        flex-wrap: unset;
+    }
+    .contact-right {
+        padding-left: 15px;
+    }
+    .search-error .container .row .stt-form form .form-group input {
+        width: 68%;
+    }
     .option-1 .container .box-banner {
         width: 60%;
     }
@@ -69,10 +81,10 @@
         margin-bottom: 30px;
     }
     .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 h4 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 h3 {
-        font-size: 30px;
+        font-size: 22px;
         display: inline-block;
     }
     .option-4 .container .row .home-spkm a .home-spkm-1 h5 {
@@ -95,9 +107,7 @@
     footer .footer-main .container .row .ft-form-search .ft-social ul {
         text-align: center;
     }
-    .setting-box-home-product .box-home-product .spnb-1 form fieldset {
-        padding: 0em 4em 0em;
-    }
+
     .option-5 .container .slider .ed-customer .ed-customer-1 {
         display: unset; 
         float: unset; 
@@ -124,11 +134,28 @@
         float: unset; 
         margin: auto;
     }
-    .txt-home-product form fieldset{
-        padding: 0em 6.5em 0em;
-    }
     .ed-navbar .navbar .navbar-collapse .navbar-nav li .ed-dropmn{
         position: static;
+    }
+    header .head-logo{
+        background: #9bd032;
+    }
+    header .head-logo .head-mid-logo .icon-buy ul li a {
+        color: #ffffff;
+    }
+    header .head-logo .head-mid-logo .icon-buy ul li a sup {
+        background: #ffffff;
+        color: #9bd032;
+    }
+
+    .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 {
+        right: 0px;
+        bottom: 0;
+        top: unset;
+        left: unset;
+    }
+    .about-right{
+        margin-top: 50px;
     }
 }
 @media (max-width: 767px){
@@ -136,6 +163,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .search-error .container .row .stt-form form {
+        width: 90%;
+    }
     .navbar-header a.navbar-brand{
         text-transform: uppercase;
         color: #fff;
@@ -180,9 +210,7 @@
     footer .ft-bottom {
         padding: 30px 0px;
     }
-    .setting-box-home-product .box-home-product .spnb-1 form fieldset {
-        padding: 0em 7.5em 0em;
-    }
+
     header .head-logo .ed-navbar nav .container .navbar-collapse .navbar-nav li {
         float: none;
         display: block;
@@ -207,25 +235,11 @@
     .contact .container .row .contact-left {
         padding: 0em;
     }
-    .spbcn fieldset{
-        padding: 0em 7.5em 0em;
-    }
-    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control .glyphicon.glyphicon-chevron-right {
-        margin-right: -10px;
-    }
 
-    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control .glyphicon {
-        margin-top: -12px;
-    }
-    .news-1 .container .row .news-left .news-left-3 .spbcn .slide .carousel-control .glyphicon.glyphicon-chevron-left {
-        margin-left: -10px;
-    }
     .news-1 .container .row .news-right .title-news-2 ul li {
         margin-bottom: 10px;
     }
-    .setting-box-home-product fieldset {
-        padding: 0em 7.5em 0em;
-    }
+
     .chinhsach-muahang .nav-tabs li{
         float: unset;
     }
@@ -264,33 +278,57 @@
     .chinhsach-muahang .tab-content{
         padding: 15px;
     }
-    .txt-home-product form fieldset{
-        padding: 0em 7.5em 0em;
+
+    header .head-logo .head-mid-logo .icon-buy ul li .search-mobile {
+        top: 45px;
+        right: 0;
     }
+    .option-4 .container .row .home-spkm a .home-spkm-1 .home-spkm-2 {
+        right: 0px;
+        left: unset;
+    }
+    .register-page .container .row .form-register {
+         height: unset; 
+    }
+    footer .footer-main .container .row .ft-bottom-final .ft-final-2 ul {
+        text-align: center;
+    }
+    footer .footer-main .container .row .ft-bottom-final .ft-final-1 {
+        text-align: center;
+    }
+    header .head-logo .ed-navbar .navbar {
+        top: 50px;
+    }
+
 
 }
 
 @media only screen and (max-width: 375px) {
-    .spbcn fieldset {
-        padding: 0em 6.5em 0em;
+    .option-3 .container .row .box-best-quality-1 .box-best-quality .bd-box-quality h4 {
+        font-size: 20px;
     }
-    .setting-box-home-product .box-home-product .spnb-1 form fieldset {
-        padding: 0em 6.5em 0em;
-    }
-    .setting-box-home-product fieldset {
-        padding: 0em 6.5em 0em;
-    }
-    footer .footer-main .container .row .ft-form-search .ed-ft-search form button {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-    .txt-home-product form fieldset{
-        padding: 0em 6.5em 0em;
+    .option-3 .container .row .box-best-quality-1 .box-best-quality .bd-box-quality h5 {
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 320px) {
-
+    .search-error .container .row .stt-form form .form-group input {
+        width: 60%;
+    }
+    .icon-buy .click-drp-cart .dropdown-cart {
+        right: -57px;
+    }
+    footer .footer-top .container .row .ft-0 .ft-1 {
+        width: 100%;
+    }
+    footer .footer-main .container .row .ft-form-search .ed-ft-search form {
+       width: 100%; 
+    }
+    .option-1 .container .box-banner .box-banner-1 .box-banner-2 h2 {
+        font-size: 22px;
+        margin: 1em 0 1.5em;
+    }
 }
 
 @media only screen and (max-height: 560px) {

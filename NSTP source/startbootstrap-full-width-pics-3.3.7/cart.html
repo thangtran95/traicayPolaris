@@ -16,6 +16,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link href="css/full-width-pics.css" rel="stylesheet">
     <link href="css/library.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -25,28 +27,23 @@
 </head>
 
 <body>
-<header>
-        <div class=" text-right ed-toggle-right">
-             <button type="button" id="btn-navbar-toggle" class="navbar-toggle">
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-            </button>
-        </div>
+    <header>
+        
         <div class="head-top visible-lg-block ">
             <ul class="container">
                 <li>Chào mừng đến với Nông sản - Thực phẩm!</li>
                 <li>Hotline: 0123456789</li>
                 <li>demo@gmail.com</li>
             </ul>
+
         </div>
 
-        <div class="head-logo ">
+        <div class="head-logo" id="fixedmobile">
             <ul class="container head-mid-logo">
-                <div class="col-sm-3 ed-logo hidden-xs">
+                <div class="col-md-3 col-sm-4 ed-logo hidden-xs">
                     <a href="#"><h2>LOGO</h2></a>
                 </div>
-                <div class="col-sm-6 ed-form-search hidden-xs">
+                <div class="col-md-6 ed-form-search hidden-sm hidden-xs">
                     <div class="col-xs-6 category">
                         <div class="form-group">
                             <select class="form-control" id="sel1">
@@ -57,7 +54,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-xs-6 input-search">
+                    <div class="col-xs-6 input-search ">
                         <form class="form-inline">
                             <div class="form-group">
                                 <input type="email" placeholder="Tìm kiếm..." class="form-control" id="email">
@@ -66,11 +63,32 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-sm-3 icon-buy">
+                <div class="col-md-3 col-sm-8 icon-buy">
                     <ul>
-                        <li><a href="#"><i class="fas fa-user"></i></a></li>
+                        <li class="hidden-lg hidden-md" id="btn-search-mobile"><a href="#"><i class="fas fa-search"></i></a>
+                            <div class="search-mobile">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li><a href="#" id="click-profile"><i class="fa fa-user"></i></a>
+                            <ul class="ed-drop-menu">
+                                <li><h4>Nguyễn A</h4></li>
+                                <li><a href="#">Thông tin cá nhân</a></li>
+                                <li><a href="#">Lịch sử mua hàng</a></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                        <li class="click-drp-cart"><a href="javascript:void(0)"><i class="fas fa-shopping-cart"></i><sup>2</sup></a>
+                        <li class="click-drp-cart"><a href="javascript:void(0)" id="kick-cart"><i class="fas fa-shopping-cart"></i><sup>2</sup></a>
                             <div class="dropdown-cart ">
                                 <div class="dropdown-cart-1">
                                     <img src="images/cart/drop-1.jpg">
@@ -96,12 +114,22 @@
                                 </ul>
                             </div>
                         </li>
+                        <li>
+                            <div class=" ed-toggle-right">
+                                <button type="button" id="btn-navbar-toggle" class="navbar-toggle">
+                                    <span class="icon-bar top-bar"></span>
+                                    <span class="icon-bar middle-bar"></span>
+                                    <span class="icon-bar bottom-bar"></span>
+                                </button>
+                            </div>
+                        </li>
+                       
                     </ul>
                 </div>        
             </ul>
 
             <div class="container ed-navbar">
-                <nav class="navbar navbar-inverse " id="getFixed" role="navigation">
+                <nav class="navbar navbar-inverse" id="getFixed" role="navigation">
                     <div class="container">
                         <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
@@ -111,12 +139,27 @@
                                 <li >
                                     <a href="about.html">Giới thiệu</a>
                                 </li>
-                                <li >
-                                    <a href="#" class="has-submenu" >Sản phẩm <span class="caret visible-lg-inline-block"></span><span class="caret-down hidden-lg"><i class="fas fa-chevron-right"></i></span></a>
-                                    <ul class="ed-dropmn">
-                                        <li><a href="product.html">Digital Marketing</a></li>
-                                        <li><a href="product.html">Case study chuyên ngành</a></li>
-                                        <li><a href="product.html">Xu hướng thị trường</a></li>
+                                <li class="has-submenu">
+                                    <a href="product.html">Sản phẩm <i class="fa fa-angle-down icon-first-submenu"></i></a>
+                                    <ul class="submenu-1">
+                                        <li class="has-second-submenu"><a href="product.html">Submenu 1 <i class="fa fa-angle-right icon-second-submenu"></i></a>
+                                            <ul class="submenu-2">
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-second-submenu"><a href="product.html">Submenu 2 <i class="fa fa-angle-right icon-second-submenu"></i></a>
+                                            <ul class="submenu-2">
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="product.html">Submenu 3 </a></li>
+                                        <li><a href="product.html">Submenu 4 </a></li>
                                     </ul>
                                 </li>
 
@@ -145,76 +188,79 @@
         <article class="setting-cart">
             <div class="container">
                 <div class="row">
-                    <h3 class="title-cart">Giỏ hàng</h3>
-                    <div class="table-cart table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Sản phẩm</th>
-                                    <th>Mô tả</th>
-                                    <th>Đơn giá</th>
-                                    <th>Khối lượng (kg)</th>
-                                    <th>Thành tiền</th>
-                                    <th>Xóa</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src="images/cart/cart-1.jpg"></td>
-                                    <td width="25%"><p>Cherry Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng.</p></td>
-                                    <td><h4>500.000đ</h4></td>
-                                    <td>
-                                        <div class="custom-input-number fix-input-number">
-                                            <div class="custom-input-number-1">
-                                                
-                                                <input type="number" class="cin-input basket-quantity" step="1" value="1" min="1" max="999">
-                                                
-                                                <button type="button" class="cin-increment">
-                                                    <i class="fas fa-angle-double-up"></i>
-                                                </button><br>
-                                                <button type="button" class="cin-decrement">
-                                                    <i class="fas fa-angle-double-down"></i>
-                                                </button>
+                    <div class="col-xs-12">
+                        <h3 class="title-cart">Giỏ hàng</h3>
+                        <div class="table-cart table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Mô tả</th>
+                                        <th>Đơn giá</th>
+                                        <th>Khối lượng (kg)</th>
+                                        <th>Thành tiền</th>
+                                        <th>Xóa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="images/cart/cart-1.jpg"></td>
+                                        <td width="25%"><p>Cherry Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng.</p></td>
+                                        <td><h4>500.000đ</h4></td>
+                                        <td>
+                                            <div class="custom-input-number fix-input-number">
+                                                <div class="custom-input-number-1">
+                                                    
+                                                    <input type="number" class="cin-input basket-quantity" step="1" value="1" min="1" max="999">
+                                                    
+                                                    <button type="button" class="cin-increment">
+                                                        <i class="fas fa-angle-up"></i>
+                                                    </button><br>
+                                                    <button type="button" class="cin-decrement">
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </button>
+                                                </div>
+
                                             </div>
+                                        </td>
+                                        <td><h4>500.000đ</h4></td>
+                                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
 
-                                        </div>
-                                    </td>
-                                    <td><h4>500.000đ</h4></td>
-                                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
-                                </tr>
+                                    <tr>
+                                        <td><img src="images/cart/cart-1.jpg"></td>
+                                        <td width="25%"><p>Cherry Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng.</p></td>
+                                        <td><h4>500.000đ</h4></td>
+                                        <td>
+                                            <div class="custom-input-number fix-input-number">
+                                                <div class="custom-input-number-1">
+                                                    
+                                                    <input type="number" class="cin-input basket-quantity" step="1" value="1" min="1" max="999">
+                                                    
+                                                    <button type="button" class="cin-increment">
+                                                        <i class="fas fa-angle-up"></i>
+                                                    </button><br>
+                                                    <button type="button" class="cin-decrement">
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </button>
+                                                </div>
 
-                                <tr>
-                                    <td><img src="images/cart/cart-1.jpg"></td>
-                                    <td width="25%"><p>Cherry Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng.</p></td>
-                                    <td><h4>500.000đ</h4></td>
-                                    <td>
-                                        <div class="custom-input-number fix-input-number">
-                                            <div class="custom-input-number-1">
-                                                
-                                                <input type="number" class="cin-input basket-quantity" step="1" value="1" min="1" max="999">
-                                                
-                                                <button type="button" class="cin-increment">
-                                                    <i class="fas fa-angle-double-up"></i>
-                                                </button><br>
-                                                <button type="button" class="cin-decrement">
-                                                    <i class="fas fa-angle-double-down"></i>
-                                                </button>
                                             </div>
-
-                                        </div>
-                                    </td>
-                                    <td><h4>500.000đ</h4></td>
-                                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
-                                </tr>
-                                
-                            </tbody>
-                        </table>
+                                        </td>
+                                        <td><h4>500.000đ</h4></td>
+                                        <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="btn-thanhtoan">
+                            <h5>Tổng đơn hàng: <span>1.100.000đ</span></h5>
+                            <li><a href="#">Tiếp tục mua hàng</a></li>
+                            <li><a href="#">Tiến hành đặt hàng</a></li>
+                        </ul>
                     </div>
-                    <ul class="btn-thanhtoan">
-                        <h5>Tổng đơn hàng: <span>1.100.000đ</span></h5>
-                        <li><a href="#">Tiếp tục mua hàng</a></li>
-                        <li><a href="#">Tiến hành đặt hàng</a></li>
-                    </ul>
+                    
                 </div>
             </div>
         </article>
@@ -225,7 +271,7 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 ft-0">
+                    <div class="col-md-4 ft-0 wow animated flip" data-wow-delay="0s">
                         <div class="ft-1">
                             <i class="fas fa-phone"></i>
                             <div class="ft-2">
@@ -234,7 +280,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ft-0">
+                    <div class="col-md-4 ft-0 wow animated flip" data-wow-delay="0.5s">
                         <div class="ft-1">
                             <i class="fas fa-envelope"></i>
                             <div class="ft-2">
@@ -242,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ft-0">
+                    <div class="col-md-4 ft-0 wow animated flip" data-wow-delay="1s">
                         <div class="ft-1">
                             <i class="fas fa-clock"></i>
                             <div class="ft-2">
@@ -259,7 +305,7 @@
                 <div class="row">
                     <h2>Đăng ký để nhận thông tin mới nhất</h2>
                     <div class="row ft-form-search">
-                        <div class="col-md-6 ed-ft-search">
+                        <div class="col-md-6 ed-ft-search wow animated slideInLeft">
                             <form class="form-inline" action="/action_page.php">
                                 <div class="form-group">
                                     <input type="email" placeholder="Nhập email..." class="form-control" id="email">
@@ -267,7 +313,7 @@
                                 <button type="submit" class="btn btn-default">Gửi ngay</button>
                             </form>
                         </div>
-                        <div class="col-md-6 ft-social">
+                        <div class="col-md-6 ft-social wow animated slideInRight">
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
@@ -278,8 +324,8 @@
                         </div>
                     </div>
 
-                    <div class="row ft-bottom">
-                        <div class="col-sm-4 ft-bottom-1">
+                    <div class="row ft-bottom  wow animated slideInUp">
+                        <div class="col-md-4 col-sm-4 ft-bottom-1">
                             <h3 class="logo-1">LOGO</h3>
                             <ul>
                                 <li>Chúng tôi luôn muốn mang đến cho bạn những sản phẩn tốt nhất</li>
@@ -288,7 +334,7 @@
                                 <li><i class="fas fa-phone"></i> + 01 234 567</li>
                             </ul>
                         </div>
-                        <div class="col-sm-3 ft-bottom-1">
+                        <div class="col-md-4 col-sm-3 ft-bottom-1">
                             <h3>Thông tin</h3>
                             <ul>
                                 <li><a href="#">Mua hàng</a></li>
@@ -297,108 +343,9 @@
                                 <li><a href="#">Thanh toán</a></li>                               
                             </ul>
                         </div>
-                        <div class="col-sm-5 ft-bottom-1">
-                            <h3>Sản phẩn nổi bật</h3>
+                        <div class="col-md-4 col-sm-5 ft-bottom-1">
                             <div class="ed-next-prev">
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <div class="setting-box-home-product">
-                                                <div class="box-home-product">
-                                                    <div class="show-buy">
-                                                        <img src="images/noibat-1.jpg" class="img-responsive">
-                                                    </div>
-                                                    <div class="txt-home-product spnb-1">
-                                                        <a href="#"><h4>Dứa vàng</h4></a>
-                                                        <form>
-                                                            <fieldset>
-                                                                <span class="star-cb-group">
-                                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                                </span>
-                                                            </fieldset>
-                                                        </form>
-                                                        <p>75.000đ/KG <span>140.000đ</span></p>
-                                                    </div>
-                                                    <div class="sale-off">
-                                                        <h4>-50%</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <div class="setting-box-home-product">
-                                                <div class="box-home-product">
-                                                    <div class="show-buy">
-                                                        <img src="images/noibat-1.jpg" class="img-responsive">
-                                                    </div>
-                                                    <div class="txt-home-product spnb-1">
-                                                        <a href="#"><h4>Dứa vàng</h4></a>
-                                                        <form>
-                                                            <fieldset>
-                                                                <span class="star-cb-group">
-                                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                                </span>
-                                                            </fieldset>
-                                                        </form>
-                                                        <p>75.000đ/KG <span>140.000đ</span></p>
-                                                    </div>
-                                                    <div class="sale-off">
-                                                        <h4>-50%</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item">
-                                            <div class="setting-box-home-product">
-                                                <div class="box-home-product">
-                                                    <div class="show-buy">
-                                                        <img src="images/noibat-1.jpg" class="img-responsive">
-                                                    </div>
-                                                    <div class="txt-home-product spnb-1">
-                                                        <a href="#"><h4>Dứa vàng</h4></a>
-                                                        <form>
-                                                            <fieldset>
-                                                                <span class="star-cb-group">
-                                                                    <input type="radio" id="rating-5" name="rating" value="5" /><label for="rating-5">5</label>
-                                                                    <input type="radio" id="rating-4" name="rating" value="4" checked="checked" /><label for="rating-4">4</label>
-                                                                    <input type="radio" id="rating-3" name="rating" value="3" /><label for="rating-3">3</label>
-                                                                    <input type="radio" id="rating-2" name="rating" value="2" /><label for="rating-2">2</label>
-                                                                    <input type="radio" id="rating-1" name="rating" value="1" /><label for="rating-1">1</label>
-                                                                    <input type="radio" id="rating-0" name="rating" value="0" class="star-cb-clear" /><label for="rating-0">0</label>
-                                                                </span>
-                                                            </fieldset>
-                                                        </form>
-                                                        <p>75.000đ/KG <span>140.000đ</span></p>
-                                                    </div>
-                                                    <div class="sale-off">
-                                                        <h4>-50%</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                        <span class="fas fa-long-arrow-alt-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                        <span class="fas fa-long-arrow-alt-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpolarisvina%2F&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=175588756336328" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                             </div>
                         </div>
                     </div>
@@ -425,10 +372,14 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/custom.js"></script>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <script src="js/wow.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/custom_slick.js"></script>
 
 
 

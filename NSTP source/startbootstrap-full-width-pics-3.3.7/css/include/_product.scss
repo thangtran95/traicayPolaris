@@ -64,11 +64,35 @@
 							text-transform: uppercase;
 							font-size: 18px;
 							font-weight: bold;
+							position: relative;
 						}
 						
 					}
-					.slide-price{
+					.slide-price, .size-price{
+						margin-bottom: 15px;
+						padding: 0 20px;
+						.title-1{
+							text-align: center;
+							text-transform: uppercase;
+							font-size: 18px;
+							font-weight: bold;
+							position: relative;
 
+							i{
+								transform: rotateZ(0deg);
+								transition: transform .5s ease;
+								position: absolute;
+								right: 0;
+								&.rote90{
+									transform: rotateZ(90deg);
+								}
+							}
+						}
+						.submenu-1{
+							padding: 0;
+							list-style: none;
+							display: none;
+						}
 					}
 					.size-price{
 						.custom-radio-btn{
@@ -148,7 +172,7 @@
 				.news-left-3{
 					background: $green;
 					color: #fff;
-					padding: 20px 0 70px;
+					padding: 20px 0 40px;
 					margin-bottom: 40px;
 					div{
 						h3{
@@ -160,138 +184,47 @@
 						
 					}
 					.spbcn{
-						.slide{
-							.carousel-inner{
-								.item{
-									.title-spbcn{
-										text-decoration: none;
-										color: #333333;
-										font-size: 17px;
-										img{
-											width: 100%;
-										}
+						position: relative;
+
+						.ed-spbcn1{
+							.box-home-product{
+								.txt-home-product{
+									h4{
+										color: #fff;
 									}
-									form{
-										fieldset{
-											$unchecked-star: '\2606';
-											$unchecked-color: #df4343;
-											$checked-star: '\2605';
-											$checked-color: #df4343;
-
-											.star-cb-group {
-												font-size: 0;
-												* {
-													font-size: 1rem;
-												}
-												unicode-bidi: bidi-override;
-												direction: rtl;
-												& > input {
-													display: none;
-													& + label {
-														display: inline-block;
-														overflow: hidden;
-														text-indent: 9999px;
-														width: 1em;
-														white-space: nowrap;
-														cursor: pointer;
-														&:before {
-															display: inline-block;
-															text-indent: -9999px;
-															content: $unchecked-star;
-															color: $unchecked-color;
-														}
-													}
-													&:checked ~ label:before,
-													& + label:hover ~ label:before,
-													& + label:hover:before {
-														content: $checked-star;
-														color: $checked-color;
-														text-shadow: 0 0 1px #333;
-													}
-												}
-
-												& > .star-cb-clear + label {
-													text-indent: -9999px;
-													width: .5em;
-													margin-left: -.5em;
-												}
-												& > .star-cb-clear + label:before {
-													width: .5em;
-												}
-
-												&:hover > input + label:before {
-													content: $unchecked-star;
-													color: $unchecked-color;
-													text-shadow: none;
-												}
-												&:hover > input + label:hover ~ label:before,
-												&:hover > input + label:hover:before {
-													content: $checked-star;
-													color: $checked-color;
-													text-shadow: 0 0 1px #333;
-												}
-											}
-
-											:root {
-												font-size: 2em;
-												font-family: Helvetica, arial, sans-serif;
-											}
-
-
-											fieldset {
-												border: 0;
-												width: 100%;
-												border-radius: 1px;
-												padding: 0em 3.5em 0em;
-											}
+									.ed-star{
+										span.checked{
+											color: $red;
 										}
 									}
 									p{
-										font-size: 20px;
-										color: #df4343;
-										font-weight: bold;
-										text-align: center;
-										border-bottom: 1px solid #d8e8b8;
-										padding-bottom: 20px;
 										span{
-											font-size: 15px;
 											color: #fff;
-											font-weight: normal;
-											text-decoration: line-through;
 										}
 									}
 								}
 							}
-							.carousel-control{
-								bottom: unset !important;
-								top: unset !important;
-								background-image: unset;
-								background-image: unset;
-								background-image: unset;
-								background-image: unset;
-								filter: unset;
-								background-repeat: unset;
-								width: 45px;
-								height: 45px;
-								border-radius: 50%;
-								padding: 7px;
+						}
+						.slider{
+							.slick-arrow{
+								position: absolute;
+								bottom: -35px;
+								top: unset;
+								width: 36px;
+								height: 36px;
+								border: 1px solid;
 								color: #fff;
-								border: 2px solid #fff;
-								&.left{
-									left: 3px;
+								border-radius: 50%;
+								&:before{
+									color: #fff;
 								}
-								&.right{
-									right: 3px;
-								}
-								.glyphicon{
-									margin-top: -15px;
-									&.glyphicon-chevron-left{
-										margin-left: -15px;
-									}
-									&.glyphicon-chevron-right{
-										margin-right: -15px;
-									}
-								}
+							}
+							.slick-next{
+								right: calc(50% - 45px);
+							}
+							.slick-prev{
+								left: calc(50% - 45px);
+
 							}
 						}
 					}
@@ -302,10 +235,11 @@
 					border-bottom: 1px solid $green;
 					margin-bottom: 30px;
 					h4{
-						font-weight: bold;
 						display: inline-block;
 						float: left;
 						margin: 0;
+						font-size: 16px;
+						color: #999;
 					}
 					ul{
 						padding: 0;
@@ -338,7 +272,7 @@
 									background: $green;
 									color: #fff;
 									width: 10em;
-									margin-left: 5em;
+									margin-left: 5px;
 									cursor: pointer;
 									outline: none;
 									border-radius: 0px;
@@ -359,9 +293,13 @@
 			.information-product{
 				border-bottom: 1px solid #cecece;
 				padding-bottom: 20px;
-				.ed-star-detail{
-					fieldset{
-						padding: 0;
+				.ed-star{
+					text-align: left;
+					span{
+						color: #dadada;
+						&.checked{
+							color: $green;
+						}
 					}
 				}
 				h4{
@@ -372,6 +310,7 @@
 					color: #333333;
 					span{
 						color: $green;
+
 					}
 				}
 				h3{
@@ -419,7 +358,13 @@
 			.nav-tabs{
 				border-bottom: 5px solid #9bd031;
 				margin-bottom: 20px;
+				white-space: nowrap;
+				overflow-x: visible;
+				overflow-y: hidden;
+				width: 100%;
 				li{
+					float: unset;
+					display: inline-block;
 					a{
 						background: #c6de95;
 						color: #fff;
@@ -460,43 +405,28 @@
 				padding: 13px 10px;
 				font-weight: 600;
 				margin: 0 0 20px;
+				position: relative;
 			}
 			.sanpham-lienqan-1{
-				.slide{
-					.carousel-control{
-						top: -65px !important;
-						background-image: unset;
-						background-image: unset;
-						background-image: unset;
-						background-image: unset;
-						filter: unset;
-						background-repeat: unset;
-						width: 40px;
-						height: 40px;
-						border-radius: 50%;
-						padding: 7px;
+				.slick-arrow{
+					position: absolute;
+					top: -45px;
+					width: 36px;
+					height: 36px;
+					border: 1px solid;
+					color: #fff;
+					border-radius: 50%;
+					&:before{
 						color: #fff;
-						border: 2px solid #fff;
-						&.left{
-							right: 4em;
-							left: unset;
-						}
-						&.right{
-							right: 1em;
-
-						}
-						.glyphicon{
-							margin-top: -13px;
-							font-size: 25px;
-							&.glyphicon-chevron-left{
-								margin-left: -14px;
-							}
-							&.glyphicon-chevron-right{
-								margin-right: -15px;
-							}
-						}
 					}
 				}
+				.slick-next{
+					left: calc(100% - 45px);
+				}
+				.slick-prev{
+					left: calc(100% - 90px);
+				}
+
 			}
 		}
 	}
@@ -504,43 +434,14 @@
 
 .product-general{
 	margin-bottom: 30px;
-	a{
-		text-decoration: none;
-		img{
-			width: 100%;	
-		}
-		h3{
-			text-align: center;
-			font-size: 18px;
-			color: #333333;
-			font-weight: 600;
-			transition: all .5s ease;
-
-		}
-		&:hover{
-			h3{
-				color: $green;
+	.txt-home-product{
+		.ed-star{
+			span{
+				font-size: 15px;
 			}
 		}
 	}
-	form{
-		fieldset{
-
-		}
-	}
-	p{
-		font-size: 20px;
-		color: $red;
-		font-weight: bold;
-		text-align: center;
-		padding-bottom: 20px;
-		span{
-			font-size: 15px;
-			color: #999999;
-			font-weight: normal;
-			text-decoration: line-through;
-		}
-	}
+	
 }
 
 
@@ -631,6 +532,96 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+.slide-product-left{
+	.carousel-inner{
+		.item{
+			.txt-home-product{
+				.ed-star{
+					span{
+						&.checked{
+							color: $red;
+						}
+					}
+				}
+			}
+			p{
+				span{
+					font-size: 15px;
+					color: #fff;
+					font-weight: normal;
+					text-decoration: line-through;
+				}
+			}
+		}
+	}
+}
+
+
+.txt-list-items{
+	a{
+		text-decoration: none;
+		h4{
+			font-weight: bold;
+			margin: 0;
+			font-size: 17px;
+			color: #333333;
+			transition: all .5s ease;
+			&:hover{
+				color: $green;
+			}
+		}
+	}
+	.ed-star{
+		margin: 10px 0;
+		text-align: left;
+		span{
+			color: #dadada;
+			&.checked{
+				color: $green;
+			}
+		}
+	}
+	h3{
+		font-size: 20px;
+		color: #df4343;
+		font-weight: bold;
+		text-align: left;
+		margin: 0 0 10px;
+		span{
+			font-size: 15px;
+			color: #999999;
+			font-weight: normal;
+			text-decoration: line-through;
+		}
+	}
+	p{
+		color: #999;
+		font-size: 17px;
+	}
+	ul{
+		padding: 0;
+		list-style: none;
+		margin: 30px 0;
+		li{
+			display: inline-block;
+			margin-right: 20px;
+			margin-bottom: 40px;
+			a{
+				color: #fff;
+				background: $green;
+				padding: 10px 20px;
+				font-size: 17px;
+				transition: all .5s ease;
+				&:hover{
+					background: #fff;
+					color: $green;
+					border: 1px solid $green;
 				}
 			}
 		}

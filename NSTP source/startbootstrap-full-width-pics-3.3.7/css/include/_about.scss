@@ -49,6 +49,7 @@
 			}
 		}
 		.about-1-2{
+
 			padding: 60px 0 40px;
 			div{
 				div{
@@ -59,12 +60,22 @@
 					h4{
 						font-weight: bold;
 						margin: 15px 0;
+						color: #000;
+						transition: color .5s ease;
 					}
 					p{
 						color: #a9a9a9;
+					}
+					&:hover{
+						h4{
+							color: $green;
+						}
 					}
 				}
 			}
 		}
 	}
+}
+.contact-right{
+	padding-left: 35px;
 }

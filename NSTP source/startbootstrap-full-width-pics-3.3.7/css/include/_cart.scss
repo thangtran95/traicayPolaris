@@ -42,14 +42,6 @@
 					vertical-align: middle;
 					border-top: 0;
 					text-align: center;
-					// &:first-child{
-					// 	border-bottom-left-radius: 15px;
-					// 	border-top-left-radius: 15px;
-					// }
-					// &:last-child{
-					// 	border-bottom-right-radius: 15px;
-					// 	border-top-right-radius: 15px;
-					// }
 					h4{
 						font-weight: 600;
 						font-size: 15px;
@@ -57,6 +49,21 @@
 					}
 					a{
 						color: red;
+					}
+					.btn-themvaogio{
+						a{
+							color: #fff;
+							background: $green;
+							padding: 10px 20px;
+							border-radius: 10px;
+							text-decoration: none;
+							transition: all .5s ease;
+							&:hover{
+								background: #fff;
+								color: $green;
+								border: 1px solid $green;
+							}
+						}
 					}
 					.fix-input-number{
 						.custom-input-number-1{
@@ -69,7 +76,7 @@
 									font-weight: 900;
 									font-size: 12px;
 									width: 12px;
-									height: 16px;
+									height: 17px;
 								}
 							}
 							.cin-increment{
@@ -85,6 +92,7 @@
 								background: none;
 								border: 1px solid $green;
 								bottom: 0;
+								border-top: 0;
 							}
 							.basket-quantity{
 								height: 50px;
@@ -99,7 +107,7 @@
 		}
 	}
 	.btn-thanhtoan{
-		padding: 0;
+		padding: 0 10px;
 		text-align: right;
 		list-style: none;
 		h5{
@@ -141,10 +149,11 @@
 			position: absolute;
 			right: 0;
 			top: 35px;
-			z-index: 9999999;
+			z-index: 0;
 			padding: 7px;
+			visibility: hidden;
 			transition: all .5s ease;
-			transform: scale(0);
+			transform: translateY(15px);
 			opacity: 0;
 
 			.dropdown-cart-1{
@@ -220,7 +229,10 @@
 				}
 			}
 			&.dropdown-cart-show{
-				transform: scale(1);
+				transform: translateY(0px);
+				z-index: 999999;
+				visibility: visible;
+
 				opacity: 1;
 			}
 
